@@ -2,21 +2,19 @@ const gulp = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 const concat = require("gulp-concat");
 
-function compileHeader() {
+const compileSass = (src, dest) => () => {
   return gulp
-    .src("scss/components/header.scss")
+    .src(src)
     .pipe(sass())
-    .pipe(concat("header.css"))
+    .pipe(concat(dest))
     .pipe(gulp.dest("dist/css"));
-}
+};
 
-function compileBody() {
-  return gulp
-    .src("scss/components/body.scss")
-    .pipe(sass())
-    .pipe(concat("body.css"))
-    .pipe(gulp.dest("dist/css"));
-}
-
-exports.compileHeader = gulp.series(compileHeader);
-exports.compileBody = gulp.series(compileBody);
+exports.compileHeader = compileSass(
+  "scss/components/header.scss",
+  "header.css"
+);
+exports.compileContent = compileSass(
+  "scss/components/content.scss",
+  "content.css"
+);

@@ -8,6 +8,6 @@ global-styling:
       # css/base/print.css: {}
     component:
       dist/css/header.css: {}
-      dist/css/body.css: {}
+      dist/css/content.css: {}
       dist/css/menu.css: {}
       dist/css/footer.css: {}
