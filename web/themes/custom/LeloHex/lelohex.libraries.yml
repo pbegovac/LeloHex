@@ -1,0 +1,10 @@
+global-styling:
+  # version: 1.0
+  css:
+    base:
+      # css/base/elements.css: {}
+      css/base/fonts.css: {}
+      css/base/colors.css: {}
+      # css/base/print.css: {}
+    component:
+      css/components/header.css: {}

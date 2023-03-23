@@ -1,0 +1,20 @@
+# THEMENAME.info.yml file for Ice Cream example theme.
+name: Lelo Hex
+type: theme
+base theme: stable9
+description: "Lelo Hex theme"
+package: Custom
+core_version_requirement: ^9 || ^10
+libraries:
+  - lelohex/global-styling
+regions:
+  header: "Header"
+  content: "Content"
+  content_bottom: "Content (bottom)"
+  primary_menu: "Primary menu"
+  highlighted: "Highlighted"
+  banner_top: "Banner (top)"
+  banner_bottom: "Banner (bottom)"
+  footer: "Footer"
+  page_top: "Page top"
+  page_bottom: "Page bottom"

@@ -1,0 +1,14 @@
+name: 'Commerce Currencies Price'
+type: module
+description: 'Commerce 2 price field for all enabled currencies'
+core_version_requirement: ^8 || ^9
+package: Commerce
+
+dependencies:
+  - commerce:commerce
+  - commerce:commerce_price
+
+# Information added by Drupal.org packaging script on 2020-05-24
+version: '8.x-1.0'
+project: 'commerce_currencies_price'
+datestamp: 1590344394
