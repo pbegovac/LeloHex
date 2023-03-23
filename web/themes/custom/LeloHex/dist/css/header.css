@@ -1,0 +1,10 @@
+body nav ul {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul a {
+  color: white;
+  text-decoration: none;
+}

@@ -7,4 +7,7 @@ global-styling:
       css/base/colors.css: {}
       # css/base/print.css: {}
     component:
-      css/components/header.css: {}
+      dist/css/header.css: {}
+      dist/css/body.css: {}
+      dist/css/menu.css: {}
+      dist/css/footer.css: {}
