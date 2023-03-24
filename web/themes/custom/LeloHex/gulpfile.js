@@ -25,7 +25,7 @@ exports.compileHeader = compileSass(
   "scss/components/header.scss",
   "header.css"
 );
-exports.compileFooter = compileSass(
+exports.compileFooterBottom = compileSass(
   "scss/components/footer_bottom.scss",
   "footer_bottom.css"
 );
@@ -35,4 +35,3 @@ exports.compileContent = compileSass(
   "content.css"
 );
 exports.compileFonts = compileSass("scss/base/fonts.scss", "fonts.css");
-
