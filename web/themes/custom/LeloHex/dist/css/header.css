@@ -1,10 +1,8 @@
-body nav ul {
-  background-color: purple;
+@import url(../base/variables.scss);
+
+#header-nav {
+  font-family: "Fredoka", sans-serif;
   display: flex;
   justify-content: space-between;
-}
-
-nav ul a {
-  color: white;
-  text-decoration: none;
+  align-items: center;
 }

@@ -1,0 +1,12 @@
+@mixin justifyCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button {
+  background-color: #050e23;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
