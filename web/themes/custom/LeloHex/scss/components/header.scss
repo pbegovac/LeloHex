@@ -1,0 +1,9 @@
+<<<<<<< HEAD
+=======
+@import url(../base/mixins.scss);
+
+#header {
+  font-family: "Fredoka", sans-serif;
+  @include justifyCenter;
+}
+>>>>>>> dbe4a80db23d79e6474148ff8d28861a506eea1f

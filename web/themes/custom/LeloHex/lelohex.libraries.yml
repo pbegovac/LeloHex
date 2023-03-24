@@ -3,7 +3,22 @@ global-styling:
   css:
     base:
       css/base/fonts.css: {}
+<<<<<<< HEAD
     component:
       dist/css/header.css: {}
       dist/css/content.css: {}
       dist/css/primary_menu.css: {}
+=======
+      css/base/colors.css: {}
+      # css/base/mixins.css: {}
+    component:
+      dist/css/header.css: {}
+      dist/css/content.css: {}
+      dist/css/menu.css: {}
+      dist/css/footer_bottom.css: {}
+
+footer_bottom:
+  # version: VERSION
+  css:
+    theme:
+>>>>>>> dbe4a80db23d79e6474148ff8d28861a506eea1f

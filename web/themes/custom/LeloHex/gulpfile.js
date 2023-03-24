@@ -25,6 +25,7 @@ exports.compileHeader = compileSass(
   "scss/components/header.scss",
   "header.css"
 );
+<<<<<<< HEAD
 
 exports.compilePrimaryMenu = compileSass(
   "scss/components/primary_menu.scss",
@@ -32,6 +33,9 @@ exports.compilePrimaryMenu = compileSass(
 );
 
 exports.compileFooter = compileSass(
+=======
+exports.compileFooterBottom = compileSass(
+>>>>>>> dbe4a80db23d79e6474148ff8d28861a506eea1f
   "scss/components/footer_bottom.scss",
   "footer_bottom.css"
 );
