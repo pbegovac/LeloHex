@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+
+@font-face {
+  font-family: "Fredoka";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/https:/fonts.gstatic.com/s/fredokaone/v12/k3kUo8kEI-tA1RRcTZGmTmHB.ttf") format("truetype");
+}
+
+
+@import url(fonts.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Fredoka", sans-serif;
+}
+
+
+footer {
+  background-color: red;
+}
+
+#header {
+  font-family: "Fredoka", sans-serif;
+}
+
+
+
+
+

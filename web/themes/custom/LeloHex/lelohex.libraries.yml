@@ -10,4 +10,9 @@ global-styling:
       dist/css/header.css: {}
       dist/css/content.css: {}
       dist/css/menu.css: {}
-      dist/css/footer.css: {}
+
+footer_bottom:
+  # version: VERSION
+  css:
+    theme:
+      dist/css/footer_bottom.css: {}
