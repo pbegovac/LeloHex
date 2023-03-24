@@ -2,17 +2,8 @@ global-styling:
   # version: 1.0
   css:
     base:
-      # css/base/elements.css: {}
       css/base/fonts.css: {}
-      css/base/colors.css: {}
-      # css/base/print.css: {}
     component:
       dist/css/header.css: {}
       dist/css/content.css: {}
-      dist/css/menu.css: {}
-
-footer_bottom:
-  # version: VERSION
-  css:
-    theme:
-      dist/css/footer_bottom.css: {}
+      dist/css/primary_menu.css: {}

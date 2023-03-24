@@ -1,0 +1,37 @@
+@import "../base/mixins";
+@import "../base/colors.scss";
+
+.header-nav {
+  width: 100%;
+  background-color: $themeColor;
+  nav {
+    width: 100%;
+    ul {
+      @include justifyBetween;
+      li {
+        @include justifyCenter;
+        width: 100%;
+        a {
+          color: white;
+          span {
+            font-size: 1.2rem;
+            line-height: normal;
+            letter-spacing: 8px;
+            font-weight: 900;
+          }
+        }
+        button,
+        .primary-nav__menu-🥕 {
+          display: none;
+        }
+
+        #primary-menu-item-1,
+        #primary-menu-item-12 {
+          background-color: $submenu;
+          overflow: hidden;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}

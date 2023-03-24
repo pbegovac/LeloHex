@@ -4,6 +4,18 @@
   align-items: center;
 }
 
+@mixin justifyAround {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin justifyBetween {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 @mixin button {
   background-color: #050e23;
   color: #fff;
