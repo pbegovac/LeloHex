@@ -1,9 +1,11 @@
 @import "../base/colors.scss";
 @import "../base/mixins.scss";
+@import "../base/fonts.scss";
 
 #main {
   width: 100vw;
   background-color: $themeColor;
+  font-family: "Fredoka";
   .node__content {
     .layout__region--content {
       position: relative;
