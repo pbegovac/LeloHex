@@ -1,3 +1,5 @@
+@import "./fonts.scss";
+
 @mixin justifyCenter {
   display: flex;
   justify-content: center;
@@ -24,8 +26,11 @@
 }
 
 @mixin button {
-  background-color: #050e23;
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
+  background-color: $themeColor;
+  padding: 0.625rem 1.25rem;
 }
+
+//variables that are not fonts:
+
+$boxWidth: 48.125rem;
+$left: 10%;

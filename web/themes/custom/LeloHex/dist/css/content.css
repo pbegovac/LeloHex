@@ -2,6 +2,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+
 #main {
   width: 100vw;
   background-color: #050e23;
@@ -15,15 +19,95 @@
 #main .node__content .layout__region--content .wide-image {
   width: 100vw;
   margin: 0;
+  border-top: 17.5px solid #050e23;
+  border-bottom: 17.5px solid #050e23;
 }
 
-#main .node__content .layout__region--content .field-title-main {
-  font-size: 2.4rem;
+#main .node__content .layout__region--content .field-title-main,
+#main .node__content .layout__region--content .field-title-secondary {
+  font-size: 2rem;
   color: white;
   line-height: normal;
   letter-spacing: 8px;
   font-weight: 900;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 20%;
+  left: 10%;
+}
+
+#main .node__content .layout__region--content .field-sb-main,
+#main .node__content .layout__region--content .field-sb-secondary {
+  font-size: 4rem;
+  color: white;
+  line-height: normal;
+  letter-spacing: 8px;
+  font-weight: 900;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-width: 48.125rem;
+}
+
+#main .node__content .layout__region--content .field--type-text-with-summary {
+  font-size: 1.2rem;
+  color: white;
+  line-height: normal;
+  letter-spacing: 8px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  max-width: 48.125rem;
+}
+
+#main .node__content .layout__region--content .field--type-text-with-summary p {
+  text-align: justify;
+}
+
+#main .node__content .layout__region--content .field-specifications {
+  font-size: 1.2rem;
+  color: white;
+  line-height: normal;
+  letter-spacing: 8px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  max-width: 48.125rem;
+}
+
+#main .node__content .layout__region--content .field-button-secondary {
+  background-color: #050e23;
+  padding: 0.625rem 1.25rem;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+}
+
+#main .node__content .layout__region--content .field-button-secondary a {
+  color: #fff;
+  text-decoration: none;
+  color: white;
+  line-height: normal;
+  letter-spacing: 8px;
+  font-weight: 900;
+}
+
+#main .node__content .layout__region--content .field-video {
+  height: 100vh;
+  border-top: 17.5px solid #050e23;
+  border-bottom: 17.5px solid #050e23;
+}
+
+#main .node__content .layout__region--content .field-video .youtube-container {
+  height: 100%;
+}
+
+#main .node__content .layout__region--content .field-video .youtube-container iframe {
+  width: 100%;
+  height: 100%;
 }
