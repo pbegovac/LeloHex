@@ -16,6 +16,13 @@
   align-items: center;
 }
 
+@mixin text {
+  color: white;
+  line-height: normal;
+  letter-spacing: 8px;
+  font-weight: 900;
+}
+
 @mixin button {
   background-color: #050e23;
   color: #fff;

@@ -2,35 +2,36 @@
 @import "../base/colors.scss";
 
 .header-nav {
-  width: 100%;
+  width: 100vw;
   background-color: $themeColor;
-  nav {
+  ul {
     width: 100%;
-    ul {
-      @include justifyBetween;
-      li {
-        @include justifyCenter;
-        width: 100%;
-        a {
-          color: white;
-          span {
-            font-size: 1.2rem;
-            line-height: normal;
-            letter-spacing: 8px;
-            font-weight: 900;
+    @include justifyBetween;
+    li {
+      a {
+        .primary-nav__menu-link-inner {
+          @include text;
+          font-size: 1.2rem;
+          &:hover {
+            border-top: none;
           }
         }
-        button,
-        .primary-nav__menu-🥕 {
-          display: none;
+      }
+      button {
+        span {
+          color: $submenu;
+          border: none;
         }
-
-        #primary-menu-item-1,
-        #primary-menu-item-12 {
-          background-color: $submenu;
-          overflow: hidden;
-          padding: 5px;
-        }
+      }
+      .primary-nav__menu-🥕 {
+        display: none;
+      }
+      #primary-menu-item-1,
+      #primary-menu-item-12 {
+        background-color: $submenu;
+        overflow: hidden;
+        border-top: none;
+        padding: 5px;
       }
     }
   }

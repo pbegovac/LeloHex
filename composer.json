@@ -29,6 +29,7 @@
         "drupal/core-composer-scaffold": "^9.5",
         "drupal/core-project-message": "^9.5",
         "drupal/core-recommended": "^9.5",
+        "drupal/critical_css": "^1.19",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/select2": "^1.14",
         "drupal/select2_all": "^1.2",

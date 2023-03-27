@@ -1,73 +1,30 @@
 <div id="page-wrapper" class="page-wrapper">
-	<div id="page">
+	{% if page.header %}
+		<header class="header">
+			{{ page.header }}
+		</header>
+	{% endif %}
 
-		{% if page.header or page.primary_menu or page.secondary_menu %}
+	{% if page.primary_menu %}
 
+		{{ page.primary_menu }}
 
-			<div id="header-nav" class="header-nav" data-drupal-selector="header-nav">
-				{{ page.primary_menu }}
-				{{ page.secondary_menu }}
-			</div>
-		{% endif %}
+	{% endif %}
+
+	<div id="main" class="main layout-main-wrapper layout-container">
+			{{ page.content}}
+		
+			{{ page.content_below}}
 	</div>
 
 
-	<div id="main-wrapper" class="layout-main-wrapper layout-container">
-		<div id="main" class="layout-main">
-			<div class="main-content">
-				<a id="main-content" tabindex="-1"></a>
-				{{ page.hero }}
-				<div class="main-content__container container">
-					{{ page.highlighted }}
-					{{ page.breadcrumb }}
-
-					{% if page.sidebar %}
-						<div class="sidebar-grid grid-full">
-							<main role="main" class="site-main ie11-autorow">
-								{{ page.content_above }}
-								{{ page.content }}
-							</main>
-
-							{{ page.sidebar }}
-						</div>
-					{% else %}
-						<main role="main">
-							{{ page.content_above }}
-							{{ page.content }}
-						</main>
-					{% endif %}
-					{{ page.content_below }}
-				</div>
-			</div>
-			<div class="social-bar">
-				{{ page.social }}
-			</div>
-		</div>
-	</div>
-
-	<footer class="site-footer">
-		<div class="site-footer__inner container">
+	<footer class="footer">
+		<div class="footer_top">
 			{{ page.footer_top }}
+		</div>
+		<div class="footer_bottom">
 			{{ page.footer_bottom }}
-			{{ attach_library('footer_bottom') }}
 		</div>
 	</footer>
 
-	<div class="overlay" data-drupal-selector="overlay"></div>
-
-<<<<<<< HEAD
-</div></div>
-=======
-
-    <footer class="footer">
-      <div class="site-footer__inner container">
-        {{ page.footer_top }}
-        {{ page.footer_bottom }}
-      </div>
-    </footer>
-
-    <div class="overlay" data-drupal-selector="overlay"></div>
-
-  </div>
 </div>
->>>>>>> dbe4a80db23d79e6474148ff8d28861a506eea1f

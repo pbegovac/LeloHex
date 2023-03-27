@@ -1,0 +1,16 @@
+.footer_top {
+  width: 100vw;
+  background-color: #050e23;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer_top a {
+  font-size: 1.2rem;
+  line-height: normal;
+  letter-spacing: 8px;
+  font-weight: 900;
+  color: white;
+  text-decoration: none;
+}

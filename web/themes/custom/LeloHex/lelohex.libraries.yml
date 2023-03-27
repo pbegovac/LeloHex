@@ -1,24 +1,13 @@
 global-styling:
   # version: 1.0
   css:
+    # dist/css/default-critical.css: { critical: true }
     base:
-      css/base/fonts.css: {}
-<<<<<<< HEAD
+      dist/css/fonts.css: {}
     component:
       dist/css/header.css: {}
-      dist/css/content.css: {}
       dist/css/primary_menu.css: {}
-=======
-      css/base/colors.css: {}
-      # css/base/mixins.css: {}
-    component:
-      dist/css/header.css: {}
       dist/css/content.css: {}
-      dist/css/menu.css: {}
+      dist/css/content_below.css: {}
+      dist/css/footer_top.css: {}
       dist/css/footer_bottom.css: {}
-
-footer_bottom:
-  # version: VERSION
-  css:
-    theme:
->>>>>>> dbe4a80db23d79e6474148ff8d28861a506eea1f

@@ -1,14 +1,25 @@
-@import url(../base/fonts.scss);
+@import "../base/colors.scss";
+@import "../base/mixins.scss";
 
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "Fredoka", sans-serif;
-}
-
-#page-wrapper {
+#main {
   width: 100vw;
-  #page {
-    width: 100vw;
+  background-color: $themeColor;
+  .node__content {
+    .layout__region--content {
+      position: relative;
+      .wide-image {
+        width: 100vw;
+        margin: 0;
+      }
+      .text-content {
+      }
+      .field-title-main {
+        font-size: 2.4rem;
+        @include text;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
   }
 }

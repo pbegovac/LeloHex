@@ -1,0 +1,16 @@
+@import "../base/colors.scss";
+@import "../base/mixins.scss";
+
+.footer_top {
+  width: 100vw;
+  background-color: $themeColor;
+  @include justifyBetween;
+    a {
+    font-size: 1.2rem;
+    line-height: normal;
+    letter-spacing: 8px;
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+  }
+}

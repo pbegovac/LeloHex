@@ -1,0 +1,14 @@
+@import url(fonts.css);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#page-wrapper {
+  width: 100vw;
+}
+
+body {
+  background-color: red;
+}
