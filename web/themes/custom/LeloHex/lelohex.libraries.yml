@@ -1,7 +1,8 @@
 global-styling:
   # version: 1.0
   css:
-    # dist/css/default-critical.css: { critical: true }
+    theme:
+      dist/css/critical.css: {}
     base:
       dist/css/fonts.css: {}
     component:
@@ -11,3 +12,11 @@ global-styling:
       dist/css/content_below.css: {}
       dist/css/footer_top.css: {}
       dist/css/footer_bottom.css: {}
+
+
+critical-css:
+  css:
+    theme:
+      dist/css/default-critical.css: {
+      } 
+    

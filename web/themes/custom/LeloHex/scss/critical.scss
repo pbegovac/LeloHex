@@ -1,15 +1,14 @@
 @import url(./base/fonts.scss);
 
-* {
-  padding: 0;
-  margin: 0;
-  // font-family: "Fredoka", sans-serif; - ne radi
-}
-
-#page-wrapper {
-  width: 100vw;
-}
+// * {
+//   padding: 0;
+//   margin: 0;
+// }
 
 body {
-  background-color: red;
+  .page-wrapper {
+    width: 100vw;
+
+    font-family: "Fredoka", sans-serif;
+  }
 }
