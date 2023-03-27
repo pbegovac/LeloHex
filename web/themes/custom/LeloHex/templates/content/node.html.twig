@@ -13,10 +13,14 @@
   ]
 %}
 
-{# Comments not part of content, so they won't inherit .text-content styles. #}
-{{ content|without('comment') }}
-{% if content.comment %}
-	<div id="comments" class="{{ layout }}">
-		{{ content.comment }}
-	</div>
-{% endif %}
+
+<div{{content_attributes.addClass('node__content',layout)}}>
+
+	{# Comments not part of content, so they won't inherit .text-content styles. #}
+	{{ content|without('comment') }}
+	{% if content.comment %}
+		<div id="comments" class="{{ layout }}">
+			{{ content.comment }}
+		</div>
+	{% endif %}
+</div>
