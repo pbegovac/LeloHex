@@ -3,18 +3,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
 
 .footer_top {
+  padding: 5rem 10rem 1.5rem;
   width: 100vw;
   background-color: #050e23;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
 }
 
-.footer_top a {
-  font-size: 1.2rem;
+.footer_top .footerTopTitle {
+  margin-bottom: 2rem;
+}
+
+.footer_top .footerTopTitle .field-title-footer a {
+  font-size: 1.4rem;
   line-height: normal;
   letter-spacing: 8px;
   font-weight: 900;
   color: white;
   text-decoration: none;
+}
+
+.footer_top .footerTopLinks {
+  width: 80vw;
+}
+
+.footer_top .footerTopLinks .field-footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.footer_top .footerTopLinks .field-footer-links a {
+  font-size: 1rem;
+  line-height: normal;
+  letter-spacing: 3px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  margin: 0 5px 0 5px;
+}
+
+.footer_top .footerTopLinks .field-footer-links a:hover {
+  text-decoration: underline;
 }

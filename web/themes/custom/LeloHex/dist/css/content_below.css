@@ -58,7 +58,7 @@
 }
 
 .region--content-below .touchContainer {
-  width: 100vw;
+  width: 90vw;
   margin: 0;
   padding: 0;
   position: relative;
@@ -68,6 +68,7 @@
 }
 
 .region--content-below .touchContainer .touchContainer1 {
+  width: 90vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -76,18 +77,26 @@
 .region--content-below .touchContainer .touchContainer1 .wide-image {
   margin: 0;
   padding: 10px;
+  width: 50%;
 }
 
 .region--content-below .touchContainer .touchContainer3 {
-  width: 90vw;
+  width: 80vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .region--content-below .touchContainer .touchContainer3 .wide-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding-top: 10px;
+}
+
+.region--content-below .touchContainer .touchContainer3 .wide-image img {
+  width: 100%;
 }
 
 .region--content-below .touchContainer .touchText .field-title-stay-in-touch {

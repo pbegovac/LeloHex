@@ -38,24 +38,30 @@
     }
   }
   .touchContainer {
-    width: 100vw;
+    width: 90vw;
     margin: 0;
     padding: 0;
     position: relative;
     @include AlignColumnCenter;
     .touchContainer1 {
+      width: 90vw;
       @include justifyAround;
       .wide-image {
         margin: 0;
         padding: 10px;
+        width: 50%;
       }
     }
     .touchContainer3 {
-      width: 90vw;
+      width: 80vw;
       @include justifyCenter;
       .wide-image {
+        @include justifyCenter;
         margin: 0;
         padding-top: 10px;
+        img {
+          width: 100%;
+        }
       }
     }
     .touchText {

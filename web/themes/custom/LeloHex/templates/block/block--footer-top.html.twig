@@ -1,0 +1,22 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    layout ? 'layout--' ~ layout|clean_class,
+  ]
+%}
+{# {{ kint() }} #}
+
+{% block content %}
+
+	<div class="footerTopTitle">
+		{{ content.field_title_footer }}
+	</div>
+	<div class="footerTopLinks">
+
+		{{ content.field_footer_links }}
+	</div>
+
+{% endblock %}
+{# </div> #}

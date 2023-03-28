@@ -2,15 +2,40 @@
 @import "../base/mixins.scss";
 
 .footer_top {
+  padding: 5rem 10rem 1.5rem;
   width: 100vw;
   background-color: $themeColor;
-  @include justifyBetween;
-    a {
-    font-size: 1.2rem;
-    line-height: normal;
-    letter-spacing: 8px;
-    font-weight: 900;
-    color: white;
-    text-decoration: none;
+  @include AlignColumnCenter;
+  .footerTopTitle {
+    margin-bottom: 2rem;
+    .field-title-footer {
+      a {
+        font-size: 1.4rem;
+        line-height: normal;
+        letter-spacing: 8px;
+        font-weight: 900;
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+  .footerTopLinks {
+    width: 80vw;
+    .field-footer-links {
+      @include justifyCenter;
+      width: 100%;
+      a {
+        font-size: 1rem;
+        line-height: normal;
+        letter-spacing: 3px;
+        font-weight: 500;
+        color: white;
+        text-decoration: none;
+        margin: 0 5px 0 5px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
   }
 }

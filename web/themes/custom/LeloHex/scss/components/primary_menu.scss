@@ -6,7 +6,7 @@
   background-color: $themeColor;
   ul {
     width: 100%;
-    @include justifyBetween;
+    @include justifyAround;
     li {
       a {
         .primary-nav__menu-link-inner {

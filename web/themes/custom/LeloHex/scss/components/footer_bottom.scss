@@ -1,5 +1,26 @@
 @import "../base/colors.scss";
+@import "../base/mixins.scss";
 
 footer {
   background-color: $themeColor;
+
+  @include justifyCenter;
+  flex-direction: column;
+  .footer_bottom {
+    width: 80vw;
+    border-top: 0.8px solid $perks;
+    padding: 1.5rem 20rem 10rem;
+    .field-products {
+      @include justifyAround;
+      a {
+        font-size: 1rem;
+        line-height: normal;
+        letter-spacing: 3px;
+        font-weight: 500;
+        color: white;
+        text-decoration: none;
+        margin: 0 5px 0 5px;
+      }
+    }
+  }
 }
