@@ -1,0 +1,30 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    layout ? 'layout--' ~ layout|clean_class,
+  ]
+%}
+
+{{ kint() }}
+{% block content %}
+	<div class="touchContainer">
+		<div class="touchContainer1">
+			{{content.field_image_stayintouch}}
+			{{content.field_image_stayintouch}}
+    </div>
+
+		
+	
+		<div class="touchContainer3">
+			{{content.field_image_stayintouch}}
+		</div>
+
+		<div class="touchText">
+			{{content.field_title_stay_in_touch}}
+			{{content.body}}
+			{{content.field_subscribe_form}}
+		</div>
+	</div>
+{% endblock %}

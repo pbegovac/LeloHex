@@ -5,60 +5,87 @@
 .region--content-below {
   @include justifyCenter;
   flex-direction: column;
-  width: 100vw;
   position: relative;
   .lelohex-perks {
+    width: 100vw;
     background-color: $perks;
-    .perks-container {
-      width: 100vw;
+    @include AlignColumnCenter;
+    .title {
+      width: 100%;
+      @include justifyCenter;
       .field-title {
-        margin: 0;
-        padding-top: 100px;
-        @include justifyCenter;
         font-size: 3rem;
+        padding-top: 5%;
       }
-      .field-perks-reference {
-        height: 40vh;
-        @include justifyBetween;
-        .field__item {
-          .field-image-perks {
-            @include justifyCenter;
-            margin: 20px;
-          }
-          .field-title-perks {
-            font-weight: 900;
-            white-space: pre-wrap;
-            word-wrap: break-word;
-            max-width: 240px;
-            text-align: center;
-          }
+    }
+    .field-perks-reference {
+      padding: 5% 0;
+      width: 100%;
+      @include justifyAround;
+      .field__item {
+        .field-image-perks {
+          @include justifyCenter;
+          margin: 20px;
+        }
+        .field-title-perks {
+          font-weight: 900;
+          white-space: pre-wrap;
+          word-wrap: break-word;
+          max-width: 15rem;
+          text-align: center;
         }
       }
     }
   }
-  .subscribeImage {
-    .field-image-stayintouch {
-      width: 100vw;
-      margin: 0;
-    }
-  }
-  .field-title-stay-in-touch {
-    position: absolute;
-    @include text;
-    font-size: 3rem;
-  }
-  .field--type-text-with-summary {
-    position: absolute;
-    top: 55%;
-    @include text;
-    letter-spacing: 4px;
-    font-size: 1.2rem;
+  .touchContainer {
+    width: 100vw;
     margin: 0;
-    width: 36%;
-    text-align: center;
-  }
-  .field-subscribe-form {
-    position: absolute;
-    top: 60%;
+    padding: 0;
+    position: relative;
+    @include AlignColumnCenter;
+    .touchContainer1 {
+      @include justifyAround;
+      .wide-image {
+        margin: 0;
+        padding: 10px;
+      }
+    }
+    .touchContainer3 {
+      width: 90vw;
+      @include justifyCenter;
+      .wide-image {
+        margin: 0;
+        padding-top: 10px;
+      }
+    }
+    .touchText {
+      .field-title-stay-in-touch {
+        @include text;
+        font-size: 3rem;
+        position: absolute;
+        top: 10%;
+        left: 16.665%;
+      }
+      .field--type-text-with-summary {
+        position: absolute;
+        top: 10%;
+        left: 58.33%;
+        @include text;
+        letter-spacing: 4px;
+        font-size: 1.5rem;
+        margin: 0;
+        width: 36%;
+        text-align: center;
+      }
+      .field-subscribe-form {
+        position: absolute;
+        top: 60%;
+        right: 33%;
+        .webform-submission-form {
+          @include justifyCenter;
+          flex-direction: column;
+        }
+      }
+    }
   }
 }

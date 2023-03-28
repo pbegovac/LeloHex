@@ -30,6 +30,7 @@
         "drupal/core-project-message": "^9.5",
         "drupal/core-recommended": "^9.5",
         "drupal/critical_css": "^1.19",
+        "drupal/devel": "^5.0",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/select2": "^1.14",
         "drupal/select2_all": "^1.2",
@@ -124,5 +125,8 @@
              "drupal/commerce_product_bundles": {
                  "Undefined method getEntityFieldManager() on CommerceBundleEntityViewsData": "https://www.drupal.org/files/issues/2021-09-29/commerce_product_bundles-3239852-2.patch"}
        }
+    },
+    "require-dev": {
+        "kint-php/kint": "^5.0"
     }
 }

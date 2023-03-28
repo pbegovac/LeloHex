@@ -14,13 +14,19 @@
 
 @mixin justifyBetween {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 @mixin AlignColumnStart {
   display: flex;
   align-items: start;
+  flex-direction: column;
+}
+
+@mixin AlignColumnCenter {
+  display: flex;
+  align-items: center;
   flex-direction: column;
 }
 

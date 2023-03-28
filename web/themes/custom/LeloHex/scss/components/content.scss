@@ -72,18 +72,21 @@
         }
       }
     }
-
-    // .field-video {
-    //   height: 100vh;
-    //   border-top: 17.5px solid $themeColor;
-    //   border-bottom: 17.5px solid $themeColor;
-    //   .youtube-container {
-    //     height: 100%;
-    //     iframe {
-    //       width: 100%;
-    //       height: 100%;
-    //     }
-    //   }
-    // }
+  }
+  .block-inline-blockvideo-block {
+    width: 100vw;
+    .field-video {
+      height: 100vh;
+      border-top: 17.5px solid $themeColor;
+      border-bottom: 17.5px solid $themeColor;
+      .youtube-container {
+        height: 100%;
+        margin: 0;
+        iframe {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
   }
 }

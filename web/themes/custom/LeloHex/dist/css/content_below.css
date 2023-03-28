@@ -11,78 +11,120 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100vw;
   position: relative;
 }
 
 .region--content-below .lelohex-perks {
-  background-color: #dadada;
-}
-
-.region--content-below .lelohex-perks .perks-container {
   width: 100vw;
+  background-color: #dadada;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.region--content-below .lelohex-perks .perks-container .field-title {
-  margin: 0;
-  padding-top: 100px;
+.region--content-below .lelohex-perks .title {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3rem;
 }
 
-.region--content-below .lelohex-perks .perks-container .field-perks-reference {
-  height: 40vh;
+.region--content-below .lelohex-perks .title .field-title {
+  font-size: 3rem;
+  padding-top: 5%;
+}
+
+.region--content-below .lelohex-perks .field-perks-reference {
+  padding: 5% 0;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.region--content-below .lelohex-perks .perks-container .field-perks-reference .field__item .field-image-perks {
+.region--content-below .lelohex-perks .field-perks-reference .field__item .field-image-perks {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px;
 }
 
-.region--content-below .lelohex-perks .perks-container .field-perks-reference .field__item .field-title-perks {
+.region--content-below .lelohex-perks .field-perks-reference .field__item .field-title-perks {
   font-weight: 900;
   white-space: pre-wrap;
   word-wrap: break-word;
-  max-width: 240px;
+  max-width: 15rem;
   text-align: center;
 }
 
-.region--content-below .subscribeImage .field-image-stayintouch {
+.region--content-below .touchContainer {
   width: 100vw;
   margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.region--content-below .field-title-stay-in-touch {
-  position: absolute;
+.region--content-below .touchContainer .touchContainer1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.region--content-below .touchContainer .touchContainer1 .wide-image {
+  margin: 0;
+  padding: 10px;
+}
+
+.region--content-below .touchContainer .touchContainer3 {
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.region--content-below .touchContainer .touchContainer3 .wide-image {
+  margin: 0;
+  padding-top: 10px;
+}
+
+.region--content-below .touchContainer .touchText .field-title-stay-in-touch {
   color: white;
   line-height: normal;
   letter-spacing: 8px;
   font-weight: 900;
   font-size: 3rem;
+  position: absolute;
+  top: 10%;
+  left: 16.665%;
 }
 
-.region--content-below .field--type-text-with-summary {
+.region--content-below .touchContainer .touchText .field--type-text-with-summary {
   position: absolute;
-  top: 55%;
+  top: 10%;
+  left: 58.33%;
   color: white;
   line-height: normal;
   letter-spacing: 8px;
   font-weight: 900;
   letter-spacing: 4px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: 0;
   width: 36%;
   text-align: center;
 }
 
-.region--content-below .field-subscribe-form {
+.region--content-below .touchContainer .touchText .field-subscribe-form {
   position: absolute;
   top: 60%;
+  right: 33%;
+}
+
+.region--content-below .touchContainer .touchText .field-subscribe-form .webform-submission-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

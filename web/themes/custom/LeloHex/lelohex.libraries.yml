@@ -8,7 +8,6 @@ global-styling:
     component:
       dist/css/header.css: {}
       dist/css/primary_menu.css: {}
-      dist/css/content_below.css: {}
       dist/css/footer_top.css: {}
       dist/css/footer_bottom.css: {}
 
@@ -21,3 +20,10 @@ content-css:
   css:
     theme:
       dist/css/content.css: {}
+
+contentbelow-css:
+  css:
+    theme:
+      dist/css/content_below.css: {}
+
+
