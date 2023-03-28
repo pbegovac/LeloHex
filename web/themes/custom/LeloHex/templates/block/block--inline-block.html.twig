@@ -1,0 +1,21 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    layout ? 'layout--' ~ layout|clean_class,
+  ]
+%}
+
+
+<div{{attributes.addClass(classes)}}>
+	{{ attach_library('lelohex/content-css') }}
+	{% block content %}
+		{{ content.field_image_secondary }}
+		<div class="content-secondary">
+			{{ content.field_title_secondary }}
+			{{ content.field_sb_secondary }}
+			{{ content.field_button_secondary }}
+		</div>
+	{% endblock %}
+</div>

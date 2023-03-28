@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+
+.region--content-below {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  position: relative;
+}
+
+.region--content-below .lelohex-perks {
+  background-color: #dadada;
+}
+
+.region--content-below .lelohex-perks .perks-container {
+  width: 100vw;
+}
+
+.region--content-below .lelohex-perks .perks-container .field-title {
+  margin: 0;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.region--content-below .lelohex-perks .perks-container .field-perks-reference {
+  height: 40vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.region--content-below .lelohex-perks .perks-container .field-perks-reference .field__item .field-image-perks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.region--content-below .lelohex-perks .perks-container .field-perks-reference .field__item .field-title-perks {
+  font-weight: 900;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-width: 240px;
+  text-align: center;
+}
+
+.region--content-below .subscribeImage .field-image-stayintouch {
+  width: 100vw;
+  margin: 0;
+}
+
+.region--content-below .field-title-stay-in-touch {
+  position: absolute;
+  color: white;
+  line-height: normal;
+  letter-spacing: 8px;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.region--content-below .field--type-text-with-summary {
+  position: absolute;
+  top: 55%;
+  color: white;
+  line-height: normal;
+  letter-spacing: 8px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  font-size: 1.2rem;
+  margin: 0;
+  width: 36%;
+  text-align: center;
+}
+
+.region--content-below .field-subscribe-form {
+  position: absolute;
+  top: 60%;
+}

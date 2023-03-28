@@ -8,15 +8,16 @@ global-styling:
     component:
       dist/css/header.css: {}
       dist/css/primary_menu.css: {}
-      dist/css/content.css: {}
       dist/css/content_below.css: {}
       dist/css/footer_top.css: {}
       dist/css/footer_bottom.css: {}
 
-
 critical-css:
   css:
     theme:
-      dist/css/default-critical.css: {
-      } 
-    
+      dist/css/default-critical.css: {}
+
+content-css:
+  css:
+    theme:
+      dist/css/content.css: {}

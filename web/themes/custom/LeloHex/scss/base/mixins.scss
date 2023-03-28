@@ -18,6 +18,12 @@
   align-items: center;
 }
 
+@mixin AlignColumnStart {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
 @mixin text {
   color: white;
   line-height: normal;
@@ -28,9 +34,29 @@
 @mixin button {
   background-color: $themeColor;
   padding: 0.625rem 1.25rem;
+  top: 60%;
+}
+
+@mixin fieldSubtitle {
+  font-size: 4rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+@mixin fieldImage {
+  width: 100vw;
+  margin: 0;
+  border-top: 17.5px solid $themeColor;
+  border-bottom: 17.5px solid $themeColor;
+}
+
+@mixin contentContainer {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  z-index: 3;
 }
 
 //variables that are not fonts:
-
 $boxWidth: 48.125rem;
 $left: 10%;

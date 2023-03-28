@@ -1,0 +1,64 @@
+@import "../base/colors.scss";
+@import "../base/mixins.scss";
+@import "../base/fonts.scss";
+
+.region--content-below {
+  @include justifyCenter;
+  flex-direction: column;
+  width: 100vw;
+  position: relative;
+  .lelohex-perks {
+    background-color: $perks;
+    .perks-container {
+      width: 100vw;
+      .field-title {
+        margin: 0;
+        padding-top: 100px;
+        @include justifyCenter;
+        font-size: 3rem;
+      }
+      .field-perks-reference {
+        height: 40vh;
+        @include justifyBetween;
+        .field__item {
+          .field-image-perks {
+            @include justifyCenter;
+            margin: 20px;
+          }
+          .field-title-perks {
+            font-weight: 900;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            max-width: 240px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .subscribeImage {
+    .field-image-stayintouch {
+      width: 100vw;
+      margin: 0;
+    }
+  }
+  .field-title-stay-in-touch {
+    position: absolute;
+    @include text;
+    font-size: 3rem;
+  }
+  .field--type-text-with-summary {
+    position: absolute;
+    top: 55%;
+    @include text;
+    letter-spacing: 4px;
+    font-size: 1.2rem;
+    margin: 0;
+    width: 36%;
+    text-align: center;
+  }
+  .field-subscribe-form {
+    position: absolute;
+    top: 60%;
+  }
+}

@@ -1,0 +1,16 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    layout ? 'layout--' ~ layout|clean_class,
+  ]
+%}
+
+
+{{kint()}}
+{% block content %}
+	<div class="lelohex-perks">
+	<div class="title">
+		{{ content }}</div>
+{% endblock %}
