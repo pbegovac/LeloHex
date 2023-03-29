@@ -23,11 +23,12 @@
 }
 
 .layout--twocol-section--50-50 .block-field-blockcommerce-productdefaultfield-product-image .field-product-image img {
-  width: 50%;
-  height: 60%;
+  width: 40%;
+  height: 40%;
 }
 
 .layout--twocol-section--50-50 .layout__region--second {
+  padding: 5rem;
   display: flex;
   align-items: start;
   flex-direction: column;
@@ -41,6 +42,7 @@
 
 .layout--twocol-section--50-50 .layout__region--second .field--type-text-with-summary p {
   padding-right: 10rem;
+  color: #050e23;
 }
 
 .layout--twocol-section--50-50 .layout__region--second .block-layout-builder {
@@ -48,12 +50,50 @@
 }
 
 .layout--twocol-section--50-50 .layout__region--second .block-layout-builder form {
-  width: 80%;
+  width: 100%;
+  padding-right: 10rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .layout--twocol-section--50-50 .layout__region--second .block-layout-builder form label {
   display: none;
+}
+
+.layout--twocol-section--50-50 .layout__region--second .block-layout-builder form .field--type-entity-reference {
+  width: 75%;
+}
+
+.layout--twocol-section--50-50 .layout__region--second .block-layout-builder form .field--type-entity-reference select {
+  width: 100%;
+  border: 3px solid black;
+  outline: none;
+  font-size: 1vw;
+  font-weight: 900;
+  height: 4rem;
+}
+
+.layout--twocol-section--50-50 .layout__region--second .block-layout-builder form .field--type-decimal {
+  width: 20%;
+}
+
+.layout--twocol-section--50-50 .layout__region--second .block-layout-builder form .field--type-decimal .js-form-item input {
+  width: 100%;
+  border: 3px solid black;
+  outline: none;
+  font-size: 1vw;
+  font-weight: 900;
+  height: 4rem;
+}
+
+.layout--twocol-section--50-50 .layout__region--second .block-layout-builder form .button--add-to-cart {
+  background-color: #050e23;
+  padding: 0.625rem 1.25rem;
+  top: 60%;
+  outline: none;
+  background-color: #e34f39;
+  border: none;
+  outline: none;
 }

@@ -1,0 +1,22 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    layout ? 'layout--' ~ layout|clean_class,
+  ]
+%}
+
+
+
+{% block content %}
+{{ attach_library("lelohex/condomscheme-css")}}
+	<div{{content_attributes.addClass('condomSchemeContent')}}>
+		<div class="condomImage">
+			{{ content.field_condom_image }}
+		</div>
+		<div class="textArea">
+			{{ content.field_list_reference }}
+		</div>
+	{% endblock %}
+</div>

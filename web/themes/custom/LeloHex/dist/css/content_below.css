@@ -127,5 +127,6 @@
   background-color: #050e23;
   padding: 0.625rem 1.25rem;
   top: 60%;
+  outline: none;
   border: none;
 }

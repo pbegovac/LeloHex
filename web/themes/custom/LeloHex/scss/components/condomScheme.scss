@@ -1,0 +1,39 @@
+@import "../base/colors.scss";
+@import "../base/mixins.scss";
+@import "../base/fonts.scss";
+
+.condomSchemeContent {
+  display: flex;
+  padding: 3rem;
+  .wide-image {
+    @include justifyCenter;
+  }
+  .textArea {
+    width: 100%;
+
+    .field-list-reference {
+      height: 100%;
+      @include JustifyColumnBetween;
+      .field__item {
+        display: flex;
+        color: $white;
+        .field-list-image {
+          border-right: 3px solid $white;
+          padding-right: 20px;
+          margin: 0;
+          @include justifyCenter;
+
+          img {
+            height: 80%;
+          }
+        }
+        .field-list-title {
+          font-size: 25px;
+          font-weight: 900;
+          margin: 0 10px;
+          padding: 0;
+        }
+      }
+    }
+  }
+}

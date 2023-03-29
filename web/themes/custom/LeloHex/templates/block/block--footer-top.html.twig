@@ -6,10 +6,9 @@
     layout ? 'layout--' ~ layout|clean_class,
   ]
 %}
-{# {{ kint() }} #}
+
 
 {% block content %}
-
 	<div class="footerTopTitle">
 		{{ content.field_title_footer }}
 	</div>
@@ -17,6 +16,5 @@
 
 		{{ content.field_footer_links }}
 	</div>
-
 {% endblock %}
-{# </div> #}
+

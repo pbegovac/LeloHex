@@ -11,8 +11,6 @@
     .wide-image {
       margin: 0;
       width: calc(100vw - 70px);
-      // border: solid $themeColor;
-      // border-width: 0 35px 45px;
     }
     .content-products {
       @include contentContainer;
@@ -21,9 +19,11 @@
       .field-products-title {
         font-size: 6.5vw;
         @include text;
+        line-height: 6.5vw;
         white-space: pre-wrap;
         word-wrap: break-word;
         max-width: 690px;
+        margin-bottom: 10rem;
       }
       .field-products-sb {
         @include text;
@@ -33,4 +33,3 @@
     }
   }
 }
-

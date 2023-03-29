@@ -7,6 +7,7 @@ global-styling:
       dist/css/primary_menu.css: {}
       dist/css/footer_top.css: {}
       dist/css/footer_bottom.css: {}
+
 critical-css:
   css:
     theme:
@@ -16,6 +17,11 @@ content-css:
   css:
     theme:
       dist/css/content.css: {}
+
+homepagevideo-css:
+  css:
+    theme:
+      dist/css/homePageVideo.css: {}
 
 contentbelow-css:
   css:
@@ -31,3 +37,14 @@ productscommerce-css:
   css:
     theme:
       dist/css/productsCommerce.css: {}
+
+productsvideo-css:
+  css:
+    theme:
+      dist/css/productsVideo.css: {}
+
+
+condomscheme-css:
+  css:
+    theme:
+      dist/css/condomScheme.css: {}

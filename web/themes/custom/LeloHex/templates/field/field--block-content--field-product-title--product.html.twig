@@ -1,0 +1,40 @@
+
+{%
+  set classes = [
+    'field_productTitle'
+  ]
+%}
+{%
+  set title_classes = [
+    'field__label',
+    label_display == 'visually_hidden' ? 'visually-hidden',
+  ]
+%}
+
+
+{% if label_hidden %}
+	{% if multiple %}
+		<h2{{attributes.addClass(classes,'field__items')}}>
+			{% for item in items %}
+				<h2{{item.attributes.addClass('field__item')}}>{{ item.content }}</h2>
+			{% endfor %}
+		</h2>
+	{% else %}
+		{% for item in items %}
+			<h2{{attributes.addClass(classes,'field__item')}}>{{ item.content }}</h2>
+		{% endfor %}
+	{% endif %}
+{% else %}
+	<h2{{attributes.addClass(classes)}}>
+		<h2{{title_attributes.addClass(title_classes)}}>{{ label }}</h2>
+		{% if multiple %}
+			<h2 class="field__items">
+			{% endif %}
+			{% for item in items %}
+				<h2{{item.attributes.addClass('field__item')}}>{{ item.content }}</h2>
+			{% endfor %}
+			{% if multiple %}
+			</h2>
+		{% endif %}
+	</h2>
+{% endif %}

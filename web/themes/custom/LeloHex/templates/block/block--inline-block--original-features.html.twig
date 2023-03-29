@@ -1,0 +1,22 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    layout ? 'layout--' ~ layout|clean_class,
+  ]
+%}
+
+{{kint()}}
+
+<div{{attributes.addClass(classes)}}>
+	{{ attach_library('lelohex/content-css') }}
+	{% block content %}
+  	{{ content.field_features_image}}
+		<div class="contents">
+			{{ content.field_title_features}}
+			{{ content.body }}
+			{{ content.field_original_thickness }}
+		</div>
+	{% endblock %}
+</div>

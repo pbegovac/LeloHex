@@ -12,22 +12,3 @@
 
 {% endif %}
 
-{# {%
-  set classes = [
-    'layout',
-    'layout--onecol',
-  ]
-%}
-{% if content %}
-	<div {{ region_attributes.content.addClass('layout__region', 'layout__region--content') }}>
-		{% set wrapped_content = '' %}
-		{% for item in content %}
-			{% if item.hasClass('text-content') %}
-				{% set wrapped_content = wrapped_content ~ '<div class="text-wrapper">' ~ item|raw ~ '</div>' %}
-			{% else %}
-				{% set wrapped_content = wrapped_content ~ item|raw %}
-			{% endif %}
-		{% endfor %}
-		{{ wrapped_content|raw }}
-	</div>
-{% endif %} #}

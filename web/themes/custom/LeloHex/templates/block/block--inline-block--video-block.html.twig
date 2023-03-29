@@ -9,7 +9,11 @@
 
 
 <div{{attributes.addClass(classes)}}>
-	{{ attach_library('lelohex/content-css') }}
+	 {# {% elseif app.request.uri == '/home-page' %} #} 
+		{# {{ attach_library('lelohex/homepagevideo-css') }}
+	 {% elseif app.request.uri == '/hex-original' %} #}
+		 {{ attach_library('lelohex/productsvideo-css') }} 
+	{# {% endif %}  #}
 	{% block content %}
 		{{ content.field_video }}
 	{% endblock %}

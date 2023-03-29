@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+
+.condomSchemeContent {
+  display: flex;
+  padding: 3rem;
+}
+
+.condomSchemeContent .wide-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.condomSchemeContent .textArea {
+  width: 100%;
+}
+
+.condomSchemeContent .textArea .field-list-reference {
+  height: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.condomSchemeContent .textArea .field-list-reference .field__item {
+  display: flex;
+  color: #fff;
+}
+
+.condomSchemeContent .textArea .field-list-reference .field__item .field-list-image {
+  border-right: 3px solid #fff;
+  padding-right: 20px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.condomSchemeContent .textArea .field-list-reference .field__item .field-list-image img {
+  height: 80%;
+}
+
+.condomSchemeContent .textArea .field-list-reference .field__item .field-list-title {
+  font-size: 25px;
+  font-weight: 900;
+  margin: 0 10px;
+  padding: 0;
+}

@@ -36,9 +36,11 @@
   line-height: normal;
   letter-spacing: 8px;
   font-weight: 900;
+  line-height: 6.5vw;
   white-space: pre-wrap;
   word-wrap: break-word;
   max-width: 690px;
+  margin-bottom: 10rem;
 }
 
 .layout__region--content .block-inline-blockproducts-first .content-products .field-products-sb {

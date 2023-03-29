@@ -12,12 +12,13 @@
       height: 100%;
       @include justifyCenter;
       img {
-        width: 50%;
-        height: 60%;
+        width: 40%;
+        height: 40%;
       }
     }
   }
   .layout__region--second {
+    padding: 5rem;
     @include JustifyColumnBetween;
     .commerceTitle {
       .field_title {
@@ -28,15 +29,48 @@
     .field--type-text-with-summary {
       p {
         padding-right: 10rem;
+        color: $themeColor;
       }
     }
     .block-layout-builder {
       width: 100%;
       form {
-        width: 80%;
+        width: 100%;
+        padding-right: 10rem;
         @include justifyBetween;
+        flex-wrap: wrap;
         label {
           display: none;
+        }
+        .field--type-entity-reference {
+          width: 75%;
+          select {
+            width: 100%;
+            border: 3px solid black;
+            outline: none;
+            font-size: 1vw;
+            font-weight: 900;
+            height: 4rem;
+          }
+        }
+        .field--type-decimal {
+          width: 20%;
+          .js-form-item {
+            input {
+              width: 100%;
+              border: 3px solid black;
+              outline: none;
+              font-size: 1vw;
+              font-weight: 900;
+              height: 4rem;
+            }
+          }
+        }
+        .button--add-to-cart {
+          @include button;
+          background-color: #e34f39;
+          border: none;
+          outline: none;
         }
       }
     }

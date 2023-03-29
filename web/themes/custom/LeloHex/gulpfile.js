@@ -34,6 +34,11 @@ exports.compileContent = compileSass(
   "content.css"
 );
 
+exports.compileHomePageVideo = compileSass(
+  "scss/components/homePageVideo.scss",
+  "homePageVideo.css"
+);
+
 exports.compileContentBelow = compileSass(
   "scss/components/content_below.scss",
   "content_below.css"
@@ -59,6 +64,16 @@ exports.compileCommerce = compileSass(
   "productsCommerce.css"
 );
 
+exports.compileVideo = compileSass(
+  "scss/components/productsVideo.scss",
+  "productsVideo.css"
+);
+
+exports.compileScheme = compileSass(
+  "scss/components/condomScheme.scss",
+  "condomScheme.css"
+);
+
 //bases
 exports.compileFonts = compileSass("scss/base/fonts.scss", "fonts.css");
 
@@ -78,7 +93,10 @@ exports.compileAll = gulp.parallel(
   exports.compileFonts,
   exports.compileCritical,
   exports.compileProduct,
-  exports.compileCommerce
+  exports.compileCommerce,
+  exports.compileVideo,
+  exports.compileHomePageVideo,
+  exports.compileScheme
 );
 
 // watch files and reload browser
