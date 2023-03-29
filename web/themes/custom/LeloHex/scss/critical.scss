@@ -9,9 +9,14 @@ body {
   // overflow-x: hidden;
   #main {
     font-family: "Fredoka", "Noto Sans JP", sans-serif;
-    background-color: $themeColor;
     @include justifyCenter;
+    background-color: $themeColor;
 
     width: 100%;
+  }
+  .footer {
+    @include justifyCenter;
+    flex-direction: column;
+    background-color: $themeColor;
   }
 }

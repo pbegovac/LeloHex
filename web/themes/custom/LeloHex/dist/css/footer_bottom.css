@@ -2,27 +2,19 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
 
-footer {
+.footer_bottom {
   background-color: #050e23;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-footer .footer_bottom {
-  width: 80%;
-  border-top: 0.8px solid #dadada;
+  width: 100%;
   padding: 1.5rem 20rem 10rem;
 }
 
-footer .footer_bottom .field-products {
+.footer_bottom .field-products {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-footer .footer_bottom .field-products a {
+.footer_bottom .field-products a {
   font-size: 1rem;
   line-height: normal;
   letter-spacing: 3px;
