@@ -3,7 +3,7 @@
 
 .footer_top {
   padding: 5rem 10rem 1.5rem;
-  width: 100vw;
+  width: 100%;
   background-color: $themeColor;
   @include AlignColumnCenter;
   .footerTopTitle {
@@ -20,7 +20,7 @@
     }
   }
   .footerTopLinks {
-    width: 80vw;
+    width: 80%;
     .field-footer-links {
       @include justifyCenter;
       width: 100%;

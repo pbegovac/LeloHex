@@ -16,6 +16,7 @@
 
 .region--content-below .lelohex-perks {
   width: 100vw;
+  max-width: 100%;
   background-color: #dadada;
   display: flex;
   align-items: center;
@@ -59,6 +60,7 @@
 
 .region--content-below .touchContainer {
   width: 90vw;
+  max-width: 100%;
   margin: 0;
   padding: 0;
   position: relative;
@@ -67,27 +69,15 @@
   flex-direction: column;
 }
 
-.region--content-below .touchContainer .touchContainer1 {
-  width: 90vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.region--content-below .touchContainer .touchContainer1 .wide-image {
-  margin: 0;
-  padding: 10px;
-  width: 50%;
-}
-
-.region--content-below .touchContainer .touchContainer3 {
-  width: 80vw;
+.region--content-below .touchContainer .touchContainer2 {
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.region--content-below .touchContainer .touchContainer3 .wide-image {
+.region--content-below .touchContainer .touchContainer2 .wide-image {
+  width: calc(100% - 20px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,8 +85,14 @@
   padding-top: 10px;
 }
 
-.region--content-below .touchContainer .touchContainer3 .wide-image img {
+.region--content-below .touchContainer .touchText {
+  position: absolute;
   width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .region--content-below .touchContainer .touchText .field-title-stay-in-touch {
@@ -105,15 +101,10 @@
   letter-spacing: 8px;
   font-weight: 900;
   font-size: 3rem;
-  position: absolute;
-  top: 10%;
-  left: 16.665%;
+  padding-top: 3rem;
 }
 
 .region--content-below .touchContainer .touchText .field--type-text-with-summary {
-  position: absolute;
-  top: 10%;
-  left: 58.33%;
   color: white;
   line-height: normal;
   letter-spacing: 8px;
@@ -121,14 +112,8 @@
   letter-spacing: 4px;
   font-size: 1.5rem;
   margin: 0;
-  width: 36%;
+  padding: 0 31rem;
   text-align: center;
-}
-
-.region--content-below .touchContainer .touchText .field-subscribe-form {
-  position: absolute;
-  top: 60%;
-  right: 33%;
 }
 
 .region--content-below .touchContainer .touchText .field-subscribe-form .webform-submission-form {
@@ -136,4 +121,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.region--content-below .touchContainer .touchText .field-subscribe-form .webform-button--submit {
+  background-color: #050e23;
+  padding: 0.625rem 1.25rem;
+  top: 60%;
+  border: none;
 }

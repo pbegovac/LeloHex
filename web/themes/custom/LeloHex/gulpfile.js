@@ -95,6 +95,7 @@ const compileSass = (src, dest) => () => {
 };
 
 //components
+//Home page
 exports.compileHeader = compileSass(
   "scss/components/header.scss",
   "header.css"
@@ -124,6 +125,12 @@ exports.compileFooterBottom = compileSass(
   "footer_bottom.css"
 );
 
+//product
+exports.compileProduct = compileSass(
+  "scss/components/productsFirst.scss",
+  "productsFirst.css"
+);
+
 //bases
 exports.compileFonts = compileSass("scss/base/fonts.scss", "fonts.css");
 
@@ -142,7 +149,8 @@ exports.compileAll = gulp.parallel(
   exports.compileFooterTop,
   exports.compileFooterBottom,
   exports.compileFonts,
-  exports.compileCritical
+  exports.compileCritical,
+  exports.compileProduct
 );
 
 // watch files and reload browser

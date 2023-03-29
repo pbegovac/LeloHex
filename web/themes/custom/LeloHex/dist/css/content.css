@@ -6,25 +6,20 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
 
-#main {
-  background-color: #050e23;
-  font-family: "Fredoka";
-}
-
-#main .block-inline-blockmainblock {
-  width: 100vw;
+.block-inline-blockmainblock {
+  max-width: 100%;
   position: relative;
 }
 
-#main .block-inline-blockmainblock .wide-image {
-  width: 100vw;
-  width: 100vw;
+.block-inline-blockmainblock .wide-image {
+  max-width: 100%;
+  width: 100%;
   margin: 0;
   border-top: 17.5px solid #050e23;
   border-bottom: 17.5px solid #050e23;
 }
 
-#main .block-inline-blockmainblock .contents {
+.block-inline-blockmainblock .contents {
   position: absolute;
   top: 25%;
   left: 10%;
@@ -34,7 +29,7 @@
   flex-direction: column;
 }
 
-#main .block-inline-blockmainblock .contents .field-title-main {
+.block-inline-blockmainblock .contents .field-title-main {
   font-size: 2rem;
   color: white;
   line-height: normal;
@@ -42,7 +37,7 @@
   font-weight: 900;
 }
 
-#main .block-inline-blockmainblock .contents .field-sb-main {
+.block-inline-blockmainblock .contents .field-sb-main {
   color: white;
   line-height: normal;
   letter-spacing: 8px;
@@ -53,7 +48,7 @@
   max-width: 48.125rem;
 }
 
-#main .block-inline-blockmainblock .contents .field--type-text-with-summary {
+.block-inline-blockmainblock .contents .field--type-text-with-summary {
   font-size: 1.2rem;
   color: white;
   line-height: normal;
@@ -63,11 +58,11 @@
   max-width: 48.125rem;
 }
 
-#main .block-inline-blockmainblock .contents .field--type-text-with-summary p {
+.block-inline-blockmainblock .contents .field--type-text-with-summary p {
   text-align: justify;
 }
 
-#main .block-inline-blockmainblock .contents .field-specifications {
+.block-inline-blockmainblock .contents .field-specifications {
   font-size: 1.2rem;
   color: white;
   line-height: normal;
@@ -77,20 +72,19 @@
   max-width: 48.125rem;
 }
 
-#main .block-inline-blocksecondary-blocks {
-  width: 100vw;
+.block-inline-blocksecondary-blocks {
+  width: 100%;
   position: relative;
 }
 
-#main .block-inline-blocksecondary-blocks .wide-image {
-  width: 100vw;
-  width: 100vw;
+.block-inline-blocksecondary-blocks .wide-image {
+  width: 100%;
   margin: 0;
   border-top: 17.5px solid #050e23;
   border-bottom: 17.5px solid #050e23;
 }
 
-#main .block-inline-blocksecondary-blocks .content-secondary {
+.block-inline-blocksecondary-blocks .content-secondary {
   position: absolute;
   top: 25%;
   left: 10%;
@@ -101,7 +95,7 @@
   flex-direction: column;
 }
 
-#main .block-inline-blocksecondary-blocks .content-secondary .field-title-secondary {
+.block-inline-blocksecondary-blocks .content-secondary .field-title-secondary {
   font-size: 2rem;
   color: white;
   line-height: normal;
@@ -109,7 +103,7 @@
   font-weight: 900;
 }
 
-#main .block-inline-blocksecondary-blocks .content-secondary .field-sb-secondary {
+.block-inline-blocksecondary-blocks .content-secondary .field-sb-secondary {
   color: white;
   line-height: normal;
   letter-spacing: 8px;
@@ -120,13 +114,13 @@
   max-width: 48.125rem;
 }
 
-#main .block-inline-blocksecondary-blocks .content-secondary .field-button-secondary {
+.block-inline-blocksecondary-blocks .content-secondary .field-button-secondary {
   background-color: #050e23;
   padding: 0.625rem 1.25rem;
   top: 60%;
 }
 
-#main .block-inline-blocksecondary-blocks .content-secondary .field-button-secondary a {
+.block-inline-blocksecondary-blocks .content-secondary .field-button-secondary a {
   color: #fff;
   text-decoration: none;
   color: white;
@@ -135,22 +129,22 @@
   font-weight: 900;
 }
 
-#main .block-inline-blockvideo-block {
-  width: 100vw;
+.block-inline-blockvideo-block {
+  max-width: 100%;
 }
 
-#main .block-inline-blockvideo-block .field-video {
+.block-inline-blockvideo-block .field-video {
   height: 100vh;
   border-top: 17.5px solid #050e23;
   border-bottom: 17.5px solid #050e23;
 }
 
-#main .block-inline-blockvideo-block .field-video .youtube-container {
+.block-inline-blockvideo-block .field-video .youtube-container {
   height: 100%;
   margin: 0;
 }
 
-#main .block-inline-blockvideo-block .field-video .youtube-container iframe {
+.block-inline-blockvideo-block .field-video .youtube-container iframe {
   width: 100%;
   height: 100%;
 }

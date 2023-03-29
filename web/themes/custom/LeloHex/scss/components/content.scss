@@ -2,90 +2,85 @@
 @import "../base/mixins.scss";
 @import "../base/fonts.scss";
 
-#main {
-  background-color: $themeColor;
-  font-family: "Fredoka";
+.block-inline-blockmainblock {
+  max-width: 100%;
 
-  .block-inline-blockmainblock {
-    width: 100vw;
-    position: relative;
+  position: relative;
 
-    .wide-image {
-      width: 100vw;
-      @include fieldImage;
+  .wide-image {
+    max-width: 100%;
+    @include fieldImage;
+  }
+  .contents {
+    @include contentContainer;
+    @include AlignColumnStart;
+    .field-title-main {
+      font-size: 2rem;
+      @include text;
     }
-    .contents {
-      @include contentContainer;
-      @include AlignColumnStart;
-      .field-title-main {
-        font-size: 2rem;
-        @include text;
+    .field-sb-main {
+      @include text;
+      @include fieldSubtitle;
+      max-width: $boxWidth;
+    }
+    .field--type-text-with-summary {
+      font-size: 1.2rem;
+      @include text;
+      letter-spacing: 3px;
+      max-width: $boxWidth;
+      p {
+        text-align: justify;
       }
-      .field-sb-main {
+    }
+    .field-specifications {
+      font-size: 1.2rem;
+      @include text;
+      letter-spacing: 3px;
+      max-width: $boxWidth;
+    }
+  }
+}
+.block-inline-blocksecondary-blocks {
+  width: 100%;
+  position: relative;
+  .wide-image {
+    @include fieldImage;
+  }
+  .content-secondary {
+    @include contentContainer;
+    @include AlignColumnStart;
+    flex-direction: column;
+    .field-title-secondary {
+      font-size: 2rem;
+      @include text;
+    }
+    .field-sb-secondary {
+      @include text;
+      @include fieldSubtitle;
+      max-width: $boxWidth;
+    }
+    .field-button-secondary {
+      @include button;
+      a {
+        color: $white;
+        text-decoration: none;
         @include text;
-        @include fieldSubtitle;
-        max-width: $boxWidth;
-      }
-      .field--type-text-with-summary {
-        font-size: 1.2rem;
-        @include text;
-        letter-spacing: 3px;
-        max-width: $boxWidth;
-        p {
-          text-align: justify;
-        }
-      }
-      .field-specifications {
-        font-size: 1.2rem;
-        @include text;
-        letter-spacing: 3px;
-        max-width: $boxWidth;
       }
     }
   }
-  .block-inline-blocksecondary-blocks {
-    width: 100vw;
-    position: relative;
-    .wide-image {
-      width: 100vw;
-      @include fieldImage;
-    }
-    .content-secondary {
-      @include contentContainer;
-      @include AlignColumnStart;
-      flex-direction: column;
-      .field-title-secondary {
-        font-size: 2rem;
-        @include text;
-      }
-      .field-sb-secondary {
-        @include text;
-        @include fieldSubtitle;
-        max-width: $boxWidth;
-      }
-      .field-button-secondary {
-        @include button;
-        a {
-          color: $white;
-          text-decoration: none;
-          @include text;
-        }
-      }
-    }
-  }
-  .block-inline-blockvideo-block {
-    width: 100vw;
-    .field-video {
-      height: 100vh;
-      border-top: 17.5px solid $themeColor;
-      border-bottom: 17.5px solid $themeColor;
-      .youtube-container {
+}
+.block-inline-blockvideo-block {
+  max-width: 100%;
+  .field-video {
+    height: 100vh;
+    border-top: 17.5px solid $themeColor;
+    border-bottom: 17.5px solid $themeColor;
+    .youtube-container {
+      height: 100%;
+      margin: 0;
+      iframe {
+        width: 100%;
         height: 100%;
-        margin: 0;
-        iframe {
-          width: 100%;
-          height: 100%;
-        }
       }
     }
   }

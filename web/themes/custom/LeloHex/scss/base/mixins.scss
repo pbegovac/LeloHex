@@ -30,6 +30,13 @@
   flex-direction: column;
 }
 
+@mixin JustifyColumnAround {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 @mixin text {
   color: white;
   line-height: normal;
@@ -50,7 +57,7 @@
 }
 
 @mixin fieldImage {
-  width: 100vw;
+  width: 100%;
   margin: 0;
   border-top: 17.5px solid $themeColor;
   border-bottom: 17.5px solid $themeColor;

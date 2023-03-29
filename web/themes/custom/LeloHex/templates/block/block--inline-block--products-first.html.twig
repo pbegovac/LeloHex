@@ -1,0 +1,24 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    layout ? 'layout--' ~ layout|clean_class,
+  ]
+%}
+
+{# {{ kint() }} #}
+<div{{attributes.addClass(classes)}}>
+	{# {{ attach_library('lelohex/productsfirst-css') }} #}
+	{% block content %}
+		<div class="image">
+			{{ content.field_products_image }}
+		</div>
+		<div class="content-products">
+			<h2 class="title">
+				{{ content.field_products_title }}
+			</h2>
+			{{ content.field_products_sb }}
+		</div>
+	{% endblock %}
+</div>

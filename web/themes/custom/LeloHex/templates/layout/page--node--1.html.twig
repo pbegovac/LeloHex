@@ -1,27 +1,22 @@
+{% if page.primary_menu %}
 
 
+	{{ page.primary_menu }}
 
-	{% if page.primary_menu %}
-	  
+{% endif %}
 
-		{{ page.primary_menu }}
+<div id="main" class="main layout-main-wrapper layout-container">
+	{{ page.content}}
 
-	{% endif %}
+	{{ page.content_below}}
+</div>
 
-	<div id="main" class="main layout-main-wrapper layout-container">
-			{{ page.content}}
-		
-			{{ page.content_below}}
+
+<footer class="footer">
+	<div class="footer_top">
+		{{ page.footer_top }}
 	</div>
-
-
-	<footer class="footer">
-		<div class="footer_top">
-			{{ page.footer_top }}
-		</div>
-		<div class="footer_bottom">
-			{{ page.footer_bottom }}
-		</div>
-	</footer>
-
-
+	<div class="footer_bottom">
+		{{ page.footer_bottom }}
+	</div>
+</footer>
