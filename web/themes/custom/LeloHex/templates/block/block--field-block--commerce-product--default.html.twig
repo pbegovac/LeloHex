@@ -9,15 +9,9 @@
 
 {# {{ kint() }} #}
 
-<div{{attributes.addClass(classes)}}>
-	{{ title_prefix }}
-	{% if label %}
-		<h2{{title_attributes.addClass('block__title')}}>{{ label }}</h2>
-	{% endif %}
-	{{ title_suffix }}
-	{% block content %}
-		<div{{content_attributes.addClass('block__content')}}>
-			{{ content }}
-		</div>
-	{% endblock %}
-</div>
+{% block content %}
+	<div{{content_attributes.addClass(classes)}}>
+		{{ attach_library('lelohex/productscommerce-css') }}
+		{{ content }}
+	</div>
+{% endblock %}

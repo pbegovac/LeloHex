@@ -29,7 +29,7 @@
   flex-direction: column;
 }
 
-.block-inline-blockmainblock .contents .field-title-main {
+.block-inline-blockmainblock .contents .field_title {
   font-size: 2rem;
   color: white;
   line-height: normal;
@@ -37,7 +37,7 @@
   font-weight: 900;
 }
 
-.block-inline-blockmainblock .contents .field-sb-main {
+.block-inline-blockmainblock .contents .field_sb {
   color: white;
   line-height: normal;
   letter-spacing: 8px;
@@ -62,7 +62,7 @@
   text-align: justify;
 }
 
-.block-inline-blockmainblock .contents .field-specifications {
+.block-inline-blockmainblock .contents .field_specifications {
   font-size: 1.2rem;
   color: white;
   line-height: normal;
@@ -95,7 +95,7 @@
   flex-direction: column;
 }
 
-.block-inline-blocksecondary-blocks .content-secondary .field-title-secondary {
+.block-inline-blocksecondary-blocks .content-secondary .field_titleSecondary {
   font-size: 2rem;
   color: white;
   line-height: normal;
@@ -103,7 +103,7 @@
   font-weight: 900;
 }
 
-.block-inline-blocksecondary-blocks .content-secondary .field-sb-secondary {
+.block-inline-blocksecondary-blocks .content-secondary .field_sbSecondary {
   color: white;
   line-height: normal;
   letter-spacing: 8px;

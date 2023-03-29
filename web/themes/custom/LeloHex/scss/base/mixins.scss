@@ -37,6 +37,13 @@
   justify-content: space-between;
 }
 
+@mixin JustifyColumnBetween {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 @mixin text {
   color: white;
   line-height: normal;

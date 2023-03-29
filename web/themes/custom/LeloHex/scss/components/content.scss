@@ -14,11 +14,11 @@
   .contents {
     @include contentContainer;
     @include AlignColumnStart;
-    .field-title-main {
+    .field_title {
       font-size: 2rem;
       @include text;
     }
-    .field-sb-main {
+    .field_sb {
       @include text;
       @include fieldSubtitle;
       max-width: $boxWidth;
@@ -32,7 +32,7 @@
         text-align: justify;
       }
     }
-    .field-specifications {
+    .field_specifications {
       font-size: 1.2rem;
       @include text;
       letter-spacing: 3px;
@@ -50,11 +50,11 @@
     @include contentContainer;
     @include AlignColumnStart;
     flex-direction: column;
-    .field-title-secondary {
+    .field_titleSecondary {
       font-size: 2rem;
       @include text;
     }
-    .field-sb-secondary {
+    .field_sbSecondary {
       @include text;
       @include fieldSubtitle;
       max-width: $boxWidth;

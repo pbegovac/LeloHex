@@ -7,8 +7,6 @@ global-styling:
       dist/css/primary_menu.css: {}
       dist/css/footer_top.css: {}
       dist/css/footer_bottom.css: {}
-      dist/css/productsFirst.css: {} //prebacit u template na kojem treba bit pozvan
-
 critical-css:
   css:
     theme:
@@ -23,6 +21,13 @@ contentbelow-css:
   css:
     theme:
       dist/css/content_below.css: {}
-# productsfirst-css:
-#   css:
-#     theme:
+
+productsfirst-css:
+  css:
+    theme:
+      dist/css/productsFirst.css: {}
+
+productscommerce-css:
+  css:
+    theme:
+      dist/css/productsCommerce.css: {}

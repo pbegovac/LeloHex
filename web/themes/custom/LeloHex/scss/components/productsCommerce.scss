@@ -1,0 +1,44 @@
+@import "../base/mixins.scss";
+@import "../base/colors.scss";
+@import "../base/fonts.scss";
+
+.layout--twocol-section--50-50 {
+  background-color: $white;
+  height: 100vh;
+
+  .block-field-blockcommerce-productdefaultfield-product-image {
+    height: 100%;
+    .field-product-image {
+      height: 100%;
+      @include justifyCenter;
+      img {
+        width: 50%;
+        height: 60%;
+      }
+    }
+  }
+  .layout__region--second {
+    @include JustifyColumnBetween;
+    .commerceTitle {
+      .field_title {
+        font-size: 2.4rem;
+        letter-spacing: 5.6px;
+      }
+    }
+    .field--type-text-with-summary {
+      p {
+        padding-right: 10rem;
+      }
+    }
+    .block-layout-builder {
+      width: 100%;
+      form {
+        width: 80%;
+        @include justifyBetween;
+        label {
+          display: none;
+        }
+      }
+    }
+  }
+}
