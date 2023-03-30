@@ -10,29 +10,30 @@
   }
   .textArea {
     width: 100%;
-
     .field-list-reference {
-      height: 100%;
       @include JustifyColumnBetween;
+      height: 100%;
       .field__item {
+        width: 100%;
         display: flex;
         color: $white;
-        .field-list-image {
-          border-right: 3px solid $white;
-          padding-right: 20px;
-          margin: 0 20px 0 0;
-          @include justifyCenter;
-
-          img {
-            height: 80%;
+      }
+      div.field__item > :nth-child(1) {
+        @include justifyCenter;
+        width: 12.5%;
+        border-right: 3px solid white;
+        .image {
+          .field-list-image {
+            img {
+              width: 60px;
+              border: none;
+            }
           }
         }
-        // .field-list-title {
-        //   font-size: 25px;
-        //   font-weight: 900;
-        //   margin: 0 10px;
-        //   padding: 0;
-        // }
+      }
+      div.field__item > :nth-child(2) {
+        width: 75%;
+        padding-left: 1rem;
       }
     }
   }

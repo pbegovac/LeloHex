@@ -22,27 +22,33 @@
 }
 
 .condomSchemeContent .textArea .field-list-reference {
-  height: 100%;
   display: flex;
   align-items: start;
   flex-direction: column;
   justify-content: space-around;
+  height: 100%;
 }
 
 .condomSchemeContent .textArea .field-list-reference .field__item {
+  width: 100%;
   display: flex;
   color: #fff;
 }
 
-.condomSchemeContent .textArea .field-list-reference .field__item .field-list-image {
-  border-right: 3px solid #fff;
-  padding-right: 20px;
-  margin: 0 20px 0 0;
+.condomSchemeContent .textArea .field-list-reference div.field__item > :nth-child(1) {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 12.5%;
+  border-right: 3px solid white;
 }
 
-.condomSchemeContent .textArea .field-list-reference .field__item .field-list-image img {
-  height: 80%;
+.condomSchemeContent .textArea .field-list-reference div.field__item > :nth-child(1) .image .field-list-image img {
+  width: 60px;
+  border: none;
+}
+
+.condomSchemeContent .textArea .field-list-reference div.field__item > :nth-child(2) {
+  width: 75%;
+  padding-left: 1rem;
 }
