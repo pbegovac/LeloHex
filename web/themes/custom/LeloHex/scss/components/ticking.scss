@@ -23,11 +23,17 @@
 
       .oneBox {
         @include justifyCenter;
-        flex-direction: column;
+        color: $white;
+        height: 15rem;
         p {
-          color: $white;
-          text-align: center;
+          color: white;
         }
+      }
+      .oneBox > :nth-child(1) {
+        @include justifyCenter;
+        width: 25%;
+      }
+      .oneBox > :nth-child(2) {
       }
     }
     div.field-list-references > :nth-child(1),
