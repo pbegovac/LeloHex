@@ -17,14 +17,16 @@
 
 {% if label_hidden %}
 	{% if multiple %}
-		<div{{attributes.addClass(classes,'field__items')}}>
+		<div{{attributes.addClass(classes,'1')}}>
 			{% for item in items %}
-				<div{{item.attributes.addClass('field__item')}}>{{ item.content }}</div>
+				<div{{item.attributes.addClass('oneBox')}}>
+
+					{{ item.content }}</div>
 			{% endfor %}
 		</div>
 	{% else %}
 		{% for item in items %}
-			<div{{attributes.addClass(classes,'field__item')}}>{{ item.content }}</div>
+			<div{{attributes.addClass(classes,'3')}}>{{ item.content }}</div>
 		{% endfor %}
 	{% endif %}
 {% else %}

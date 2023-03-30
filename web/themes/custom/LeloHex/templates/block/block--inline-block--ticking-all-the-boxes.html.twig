@@ -1,0 +1,18 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    layout ? 'layout--' ~ layout|clean_class,
+  ]
+%}
+
+{# {{ kint() }} #}
+{% block content %}
+	<div{{content_attributes.addClass('tickAllBoxes')}}>
+		{{ attach_library("lelohex/ticking-css")}}
+		<div class="title">{{ content.field_title_ticking }}</div>
+		<div class="references">{{ content.field_list_references }}</div>
+
+	</div>
+{% endblock %}

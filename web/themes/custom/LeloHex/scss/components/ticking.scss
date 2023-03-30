@@ -1,0 +1,47 @@
+@import "../base/colors.scss";
+@import "../base/mixins.scss";
+@import "../base/fonts.scss";
+
+.tickAllBoxes {
+  .title {
+    @include justifyCenter;
+    .field_title {
+      color: $white;
+      font-size: 3.5rem;
+    }
+  }
+  .references {
+    margin: 3rem 0;
+    @include justifyCenter;
+    .field-list-references {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "content content content";
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      .oneBox {
+        @include justifyCenter;
+        flex-direction: column;
+        p {
+          color: $white;
+          text-align: center;
+        }
+      }
+    }
+    div.field-list-references > :nth-child(1),
+    div.field-list-references > :nth-child(2),
+    div.field-list-references > :nth-child(3) {
+      border-bottom: 2px solid white;
+    }
+    div.field-list-references > :nth-child(1),
+    div.field-list-references > :nth-child(4) {
+      border-right: 2px solid white;
+    }
+    div.field-list-references > :nth-child(2),
+    div.field-list-references > :nth-child(5) {
+      border-right: 2px solid white;
+    }
+  }
+}

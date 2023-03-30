@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+
+.tickAllBoxes .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tickAllBoxes .title .field_title {
+  color: #fff;
+  font-size: 3.5rem;
+}
+
+.tickAllBoxes .references {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tickAllBoxes .references .field-list-references {
+  display: grid;
+  grid-template-areas: "header header header" "content content content";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tickAllBoxes .references .field-list-references .oneBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tickAllBoxes .references .field-list-references .oneBox p {
+  color: #fff;
+  text-align: center;
+}
+
+.tickAllBoxes .references div.field-list-references > :nth-child(1),
+.tickAllBoxes .references div.field-list-references > :nth-child(2),
+.tickAllBoxes .references div.field-list-references > :nth-child(3) {
+  border-bottom: 2px solid white;
+}
+
+.tickAllBoxes .references div.field-list-references > :nth-child(1),
+.tickAllBoxes .references div.field-list-references > :nth-child(4) {
+  border-right: 2px solid white;
+}
+
+.tickAllBoxes .references div.field-list-references > :nth-child(2),
+.tickAllBoxes .references div.field-list-references > :nth-child(5) {
+  border-right: 2px solid white;
+}

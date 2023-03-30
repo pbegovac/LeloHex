@@ -7,7 +7,6 @@ global-styling:
       dist/css/primary_menu.css: {}
       dist/css/footer_top.css: {}
       dist/css/footer_bottom.css: {}
-
 critical-css:
   css:
     theme:
@@ -43,8 +42,12 @@ productsvideo-css:
     theme:
       dist/css/productsVideo.css: {}
 
-
 condomscheme-css:
   css:
     theme:
       dist/css/condomScheme.css: {}
+
+ticking-css:
+  css:
+    theme:
+      dist/css/ticking.css: {}

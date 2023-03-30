@@ -74,6 +74,11 @@ exports.compileScheme = compileSass(
   "condomScheme.css"
 );
 
+exports.compileTicking = compileSass(
+  "scss/components/ticking.scss",
+  "ticking.css"
+);
+
 //bases
 exports.compileFonts = compileSass("scss/base/fonts.scss", "fonts.css");
 
@@ -96,7 +101,8 @@ exports.compileAll = gulp.parallel(
   exports.compileCommerce,
   exports.compileVideo,
   exports.compileHomePageVideo,
-  exports.compileScheme
+  exports.compileScheme,
+  exports.compileTicking
 );
 
 // watch files and reload browser
