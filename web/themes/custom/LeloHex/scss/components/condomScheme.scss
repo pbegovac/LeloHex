@@ -20,19 +20,19 @@
         .field-list-image {
           border-right: 3px solid $white;
           padding-right: 20px;
-          margin: 0;
+          margin: 0 20px 0 0;
           @include justifyCenter;
 
           img {
             height: 80%;
           }
         }
-        .field-list-title {
-          font-size: 25px;
-          font-weight: 900;
-          margin: 0 10px;
-          padding: 0;
-        }
+        // .field-list-title {
+        //   font-size: 25px;
+        //   font-weight: 900;
+        //   margin: 0 10px;
+        //   padding: 0;
+        // }
       }
     }
   }
