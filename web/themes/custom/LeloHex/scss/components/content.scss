@@ -65,10 +65,13 @@
     }
     .field-button-secondary {
       @include button;
+      border: none;
       a {
+        //not responding on click
         color: $white;
         text-decoration: none;
         @include text;
+        font-size: 1rem;
       }
     }
   }

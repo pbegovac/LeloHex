@@ -141,9 +141,10 @@
 
 .block-inline-blocksecondary-blocks .content-secondary .field-button-secondary {
   background-color: #050e23;
-  padding: 0.625rem 1.25rem;
+  padding: 1rem 2rem;
   top: 60%;
   outline: none;
+  border: none;
 }
 
 .block-inline-blocksecondary-blocks .content-secondary .field-button-secondary a {
@@ -153,4 +154,5 @@
   line-height: normal;
   letter-spacing: 8px;
   font-weight: 900;
+  font-size: 1rem;
 }

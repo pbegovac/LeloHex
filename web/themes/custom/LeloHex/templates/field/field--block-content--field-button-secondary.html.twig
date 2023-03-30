@@ -1,0 +1,43 @@
+{%
+  set classes = [
+    'field',
+    field_name|clean_class,
+    'field--type-' ~ field_type|clean_class,
+    'field--label-' ~ label_display,
+    label_display == 'inline' ? 'clearfix',
+  ]
+%}
+{%
+  set title_classes = [
+    'field__label',
+    label_display == 'visually_hidden' ? 'visually-hidden',
+  ]
+%}
+
+
+{% if label_hidden %}
+	{% if multiple %}
+		<button{{attributes.addClass(classes,'field__items')}}>
+			{% for item in items %}
+				<button{{item.attributes.addClass('field__item')}}>{{ item.content }}</button>
+			{% endfor %}
+		</button>
+	{% else %}
+		{% for item in items %}
+			<button{{attributes.addClass(classes,'field__item')}}>{{ item.content }}</button>
+		{% endfor %}
+	{% endif %}
+{% else %}
+	<button{{attributes.addClass(classes)}}>
+		<button{{title_attributes.addClass(title_classes)}}>{{ label }}</button>
+		{% if multiple %}
+			<button class="field__items">
+			{% endif %}
+			{% for item in items %}
+				<button{{item.attributes.addClass('field__item')}}>{{ item.content }}</button>
+			{% endfor %}
+			{% if multiple %}
+			</button>
+		{% endif %}
+	</button>
+{% endif %}

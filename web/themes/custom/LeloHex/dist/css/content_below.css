@@ -33,6 +33,7 @@
 .region--content-below .lelohex-perks .title .field-title {
   font-size: 3rem;
   padding-top: 5%;
+  font-weight: 400;
 }
 
 .region--content-below .lelohex-perks .field-perks-reference {
@@ -125,7 +126,7 @@
 
 .region--content-below .touchContainer .touchText .field-subscribe-form .webform-button--submit {
   background-color: #050e23;
-  padding: 0.625rem 1.25rem;
+  padding: 1rem 2rem;
   top: 60%;
   outline: none;
   border: none;
