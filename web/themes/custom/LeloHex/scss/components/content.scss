@@ -2,8 +2,7 @@
 @import "../base/mixins.scss";
 @import "../base/fonts.scss";
 
-.block-inline-blockmainblock,
-.block-inline-blockproduct {
+.block-inline-blockmainblock {
   max-width: 100%;
   position: relative;
 
@@ -18,9 +17,7 @@
       font-size: 2rem;
       @include text;
     }
-    .field_sb,
-    .field_productTitle,
-    .field-title-features {
+    .field_sb {
       @include text;
       @include fieldSubtitle;
       max-width: $boxWidth;
@@ -34,8 +31,7 @@
         text-align: justify;
       }
     }
-    .field_specifications,
-    .field-original-thickness {
+    .field_specifications {
       font-size: 1.2rem;
       @include text;
       letter-spacing: 3px;
