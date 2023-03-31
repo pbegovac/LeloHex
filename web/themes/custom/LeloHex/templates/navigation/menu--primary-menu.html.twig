@@ -18,11 +18,11 @@
 	{% if items %}
 
 		{#
-		      Place the menu arrow (caret) outside of the submenu because the submenu
-		      has the overflow:hidden CSS rule applied.
-		    #}
+						      Place the menu arrow (caret) outside of the submenu because the submenu
+						      has the overflow:hidden CSS rule applied.
+						    #}
 		{% if menu_level == 1 %}
-			<span data-drupal-selector="primary-nav-menu-🥕" class="primary-nav__menu-🥕"></span>
+			<span data-drupal-selector="primary-nav-menu-span" class="primary-nav__menu-span"></span>
 		{% endif %}
 
 		<ul {{ attributes.addClass('primary-nav__menu', primary_nav_level).setAttribute('data-drupal-selector', drupal_selector_primary_nav_level) }}>
@@ -57,10 +57,10 @@
 
 				<li{{item.attributes.addClass(item_classes).setAttribute('data-drupal-selector',is_top_level_menuanditem.below?'primary-nav-menu-item-has-children':false)}}>
 					{#
-					            A unique HTML ID should be used, but that isn't available through
-					            Twig yet, so the |clean_id filter is used for now.
-					            @see https://www.drupal.org/project/drupal/issues/3115445
-					          #}
+															            A unique HTML ID should be used, but that isn't available through
+															            Twig yet, so the |clean_id filter is used for now.
+															            @see https://www.drupal.org/project/drupal/issues/3115445
+															          #}
 					{% set aria_id = (aria_id ~ loop.index )|clean_id %}
 					{% set link_title %}
 					<span class="primary-nav__menu-link-inner primary-nav__menu-link-inner--level-{{ menu_level + 1 }}">{{ item.title }}</span>
@@ -75,10 +75,10 @@
 
 						{% if item.below %}
 							{#
-							                Aria-hidden  and tabindex attributes are removed via JS. Button is non-functional,
-							                but still visible in non-JS environments so that chevron can indicate presence of
-							                drop menu).
-							              #}
+																					                Aria-hidden  and tabindex attributes are removed via JS. Button is non-functional,
+																					                but still visible in non-JS environments so that chevron can indicate presence of
+																					                drop menu).
+																					              #}
 							{% if is_top_level_menu %}
 								{% set toggle_button_attributes = create_attribute({
                   'class': 'primary-nav__button-toggle',

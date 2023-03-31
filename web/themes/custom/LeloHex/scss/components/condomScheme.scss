@@ -21,7 +21,7 @@
       div.field__item > :nth-child(1) {
         @include justifyCenter;
         width: 12.5%;
-        border-right: 3px solid white;
+        border-right: 3px solid $white;
         .image {
           .field-list-image {
             img {

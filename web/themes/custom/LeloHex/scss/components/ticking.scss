@@ -26,28 +26,26 @@
         color: $white;
         height: 15rem;
         p {
-          color: white;
+          color: $white;
         }
       }
       .oneBox > :nth-child(1) {
         @include justifyCenter;
         width: 25%;
       }
-      .oneBox > :nth-child(2) {
-      }
     }
     div.field-list-references > :nth-child(1),
     div.field-list-references > :nth-child(2),
     div.field-list-references > :nth-child(3) {
-      border-bottom: 2px solid white;
+      border-bottom: 2px solid $white;
     }
     div.field-list-references > :nth-child(1),
     div.field-list-references > :nth-child(4) {
-      border-right: 2px solid white;
+      border-right: 2px solid $white;
     }
     div.field-list-references > :nth-child(2),
     div.field-list-references > :nth-child(5) {
-      border-right: 2px solid white;
+      border-right: 2px solid $white;
     }
   }
 }

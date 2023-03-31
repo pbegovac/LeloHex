@@ -46,7 +46,7 @@
           width: 75%;
           select {
             width: 100%;
-            border: 3px solid black;
+            border: 3px solid $black;
             outline: none;
             font-size: 1vw;
             font-weight: 900;
@@ -58,7 +58,7 @@
           .js-form-item {
             input {
               width: 100%;
-              border: 3px solid black;
+              border: 3px solid $black;
               outline: none;
               font-size: 1vw;
               font-weight: 900;

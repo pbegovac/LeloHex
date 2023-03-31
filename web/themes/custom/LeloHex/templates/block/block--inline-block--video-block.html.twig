@@ -9,12 +9,11 @@
 
 
 <div{{attributes.addClass(classes)}}>
-	 {# {% elseif app.request.uri == '/home-page' %} #} 
-		{# {{ attach_library('lelohex/homepagevideo-css') }}
-	 {% elseif app.request.uri == '/hex-original' %} #}
-		 {{ attach_library('lelohex/productsvideo-css') }} 
+	{# {% elseif app.request.uri == '/home-page' %} #}
+	{# {{ attach_library('lelohex/homepagevideo-css') }}
+				 {% elseif app.request.uri == '/hex-original' %} #}
+	{{ attach_library('lelohex/productsvideo-css') }}
 	{# {% endif %}  #}
-	{% block content %}
-		{{ content.field_video }}
-	{% endblock %}
-</div>
+		{% block content %}
+	{{ content.field_video }}
+{% endblock %}</div>
