@@ -68,7 +68,7 @@
 
 .layout--twocol-section--50-50 .layout__region--second .block-layout-builder form .field--type-entity-reference select {
   width: 100%;
-  border: 3px solid black;
+  border: 3px solid #000000;
   outline: none;
   font-size: 1vw;
   font-weight: 900;
@@ -81,7 +81,7 @@
 
 .layout--twocol-section--50-50 .layout__region--second .block-layout-builder form .field--type-decimal .js-form-item input {
   width: 100%;
-  border: 3px solid black;
+  border: 3px solid #000000;
   outline: none;
   font-size: 1vw;
   font-weight: 900;

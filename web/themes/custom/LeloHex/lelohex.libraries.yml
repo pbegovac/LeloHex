@@ -7,6 +7,7 @@ global-styling:
       dist/css/primary_menu.css: {}
       dist/css/footer_top.css: {}
       dist/css/footer_bottom.css: {}
+
 critical-css:
   css:
     theme:
@@ -51,3 +52,13 @@ ticking-css:
   css:
     theme:
       dist/css/ticking.css: {}
+
+features-css:
+  css:
+    theme:
+      dist/css/features.css: {}
+
+product-css:
+  css:
+    theme:
+      dist/css/product.css: {}

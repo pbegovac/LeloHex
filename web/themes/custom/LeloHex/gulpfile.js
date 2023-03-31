@@ -22,8 +22,8 @@ const compileSass = (src, dest) => () => {
 };
 
 //components
-//Home page
 
+//Home page
 exports.compilePrimaryMenu = compileSass(
   "scss/components/primary_menu.scss",
   "primary_menu.css"
@@ -64,6 +64,11 @@ exports.compileCommerce = compileSass(
   "productsCommerce.css"
 );
 
+exports.compileProduct = compileSass(
+  "scss/components/product.scss",
+  "product.css"
+);
+
 exports.compileVideo = compileSass(
   "scss/components/productsVideo.scss",
   "productsVideo.css"
@@ -72,6 +77,11 @@ exports.compileVideo = compileSass(
 exports.compileScheme = compileSass(
   "scss/components/condomScheme.scss",
   "condomScheme.css"
+);
+
+exports.compileFeatures = compileSass(
+  "scss/components/features.scss",
+  "features.css"
 );
 
 exports.compileTicking = compileSass(
@@ -102,7 +112,9 @@ exports.compileAll = gulp.parallel(
   exports.compileVideo,
   exports.compileHomePageVideo,
   exports.compileScheme,
-  exports.compileTicking
+  exports.compileTicking,
+  exports.compileFeatures,
+  exports.compileProduct
 );
 
 // watch files and reload browser

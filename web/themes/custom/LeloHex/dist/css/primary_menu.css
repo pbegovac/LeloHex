@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 @import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
@@ -33,7 +31,7 @@
   border: none;
 }
 
-.header-nav ul li .primary-nav__menu-🥕 {
+.header-nav ul li .primary-nav__menu-span {
   display: none;
 }
 

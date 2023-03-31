@@ -1,0 +1,38 @@
+@import "../base/colors.scss";
+@import "../base/mixins.scss";
+@import "../base/fonts.scss";
+
+.block-inline-blockoriginal-features {
+  max-width: 100%;
+  position: relative;
+
+  .wide-image {
+    max-width: 100%;
+    @include fieldImage;
+  }
+  .features {
+    @include contentContainer;
+    @include AlignColumnStart;
+
+    .field_sb {
+      @include text;
+      @include fieldSubtitle;
+      max-width: $boxWidth;
+    }
+    .field--type-text-with-summary {
+      font-size: 1.2rem;
+      @include text;
+      letter-spacing: 3px;
+      max-width: $boxWidth;
+      p {
+        text-align: justify;
+      }
+    }
+    .field_specifications {
+      font-size: 1.2rem;
+      @include text;
+      letter-spacing: 3px;
+      max-width: $boxWidth;
+    }
+  }
+}

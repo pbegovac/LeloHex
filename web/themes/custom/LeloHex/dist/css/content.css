@@ -7,15 +7,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
 
 .block-inline-blockmainblock,
-.block-inline-blockproduct,
-.block-inline-blockoriginal-features {
+.block-inline-blockproduct {
   max-width: 100%;
   position: relative;
 }
 
 .block-inline-blockmainblock .wide-image,
-.block-inline-blockproduct .wide-image,
-.block-inline-blockoriginal-features .wide-image {
+.block-inline-blockproduct .wide-image {
   max-width: 100%;
   width: 100%;
   margin: 0;
@@ -24,8 +22,7 @@
 }
 
 .block-inline-blockmainblock .contents,
-.block-inline-blockproduct .contents,
-.block-inline-blockoriginal-features .contents {
+.block-inline-blockproduct .contents {
   position: absolute;
   top: 25%;
   left: 10%;
@@ -36,8 +33,7 @@
 }
 
 .block-inline-blockmainblock .contents .field_title,
-.block-inline-blockproduct .contents .field_title,
-.block-inline-blockoriginal-features .contents .field_title {
+.block-inline-blockproduct .contents .field_title {
   font-size: 2rem;
   color: white;
   line-height: normal;
@@ -50,10 +46,7 @@
 .block-inline-blockmainblock .contents .field-title-features,
 .block-inline-blockproduct .contents .field_sb,
 .block-inline-blockproduct .contents .field_productTitle,
-.block-inline-blockproduct .contents .field-title-features,
-.block-inline-blockoriginal-features .contents .field_sb,
-.block-inline-blockoriginal-features .contents .field_productTitle,
-.block-inline-blockoriginal-features .contents .field-title-features {
+.block-inline-blockproduct .contents .field-title-features {
   color: white;
   line-height: normal;
   letter-spacing: 8px;
@@ -65,8 +58,7 @@
 }
 
 .block-inline-blockmainblock .contents .field--type-text-with-summary,
-.block-inline-blockproduct .contents .field--type-text-with-summary,
-.block-inline-blockoriginal-features .contents .field--type-text-with-summary {
+.block-inline-blockproduct .contents .field--type-text-with-summary {
   font-size: 1.2rem;
   color: white;
   line-height: normal;
@@ -77,17 +69,14 @@
 }
 
 .block-inline-blockmainblock .contents .field--type-text-with-summary p,
-.block-inline-blockproduct .contents .field--type-text-with-summary p,
-.block-inline-blockoriginal-features .contents .field--type-text-with-summary p {
+.block-inline-blockproduct .contents .field--type-text-with-summary p {
   text-align: justify;
 }
 
 .block-inline-blockmainblock .contents .field_specifications,
 .block-inline-blockmainblock .contents .field-original-thickness,
 .block-inline-blockproduct .contents .field_specifications,
-.block-inline-blockproduct .contents .field-original-thickness,
-.block-inline-blockoriginal-features .contents .field_specifications,
-.block-inline-blockoriginal-features .contents .field-original-thickness {
+.block-inline-blockproduct .contents .field-original-thickness {
   font-size: 1.2rem;
   color: white;
   line-height: normal;

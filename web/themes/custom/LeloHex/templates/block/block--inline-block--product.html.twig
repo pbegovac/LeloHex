@@ -8,10 +8,10 @@
 %}
 
 <div{{attributes.addClass(classes)}}>
-	{{ attach_library('lelohex/content-css') }}
+	{{ attach_library('lelohex/product-css') }}
 	{% block content %}
   	{{ content.field_product }}
-		<div class="contents">
+		<div class="product">
 			{{ content.field_product_title }}
 			{{ content.body }}
 		</div>

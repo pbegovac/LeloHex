@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+
+.block-inline-blockproduct {
+  max-width: 100%;
+  position: relative;
+}
+
+.block-inline-blockproduct .wide-image {
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  border-top: 17.5px solid #050e23;
+  border-bottom: 17.5px solid #050e23;
+}
+
+.block-inline-blockproduct .product {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  z-index: 3;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.block-inline-blockproduct .product .field_productTitle {
+  color: white;
+  line-height: normal;
+  letter-spacing: 8px;
+  font-weight: 900;
+  font-size: 4rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-width: 48.125rem;
+}
+
+.block-inline-blockproduct .product .field--type-text-with-summary {
+  font-size: 1.2rem;
+  color: white;
+  line-height: normal;
+  letter-spacing: 8px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  max-width: 48.125rem;
+}
+
+.block-inline-blockproduct .product .field--type-text-with-summary p {
+  text-align: justify;
+}
