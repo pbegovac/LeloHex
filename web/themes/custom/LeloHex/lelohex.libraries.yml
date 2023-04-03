@@ -4,9 +4,18 @@ global-styling:
     base:
       dist/css/fonts.css: {}
     component:
-      dist/css/primary_menu.css: {}
       dist/css/footer_top.css: {}
       dist/css/footer_bottom.css: {}
+  js:
+    dist/js/buttonMover.js: {}
+    dist/js/secondButtonMover.js: {}
+
+primaryMenu:
+  css:
+    theme:
+      dist/css/primaryMenu.css: {}
+  js:
+    dist/js/primaryMenu.js: {}
 
 critical-css:
   css:

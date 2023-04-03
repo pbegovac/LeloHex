@@ -17,27 +17,27 @@
 
 {% if label_hidden %}
 	{% if multiple %}
-		<button{{attributes.addClass(classes,'field__items')}}>
+		<div{{attributes.addClass(classes,'field__items')}}>
 			{% for item in items %}
-				<button{{item.attributes.addClass('field__item')}}>{{ item.content }}</button>
+				<div{{item.attributes.addClass('field__item')}}>{{ item.content }}</div>
 			{% endfor %}
-		</button>
+		</div>
 	{% else %}
 		{% for item in items %}
-			<button{{attributes.addClass(classes,'field__item')}}>{{ item.content }}</button>
+			<div{{attributes.addClass(classes,'field__item')}}>{{ item.content }}</div>
 		{% endfor %}
 	{% endif %}
 {% else %}
-	<button{{attributes.addClass(classes)}}>
-		<button{{title_attributes.addClass(title_classes)}}>{{ label }}</button>
+	<div{{attributes.addClass(classes)}}>
+		<div{{title_attributes.addClass(title_classes)}}>{{ label }}</div>
 		{% if multiple %}
-			<button class="field__items">
+			<div class="field__items">
 			{% endif %}
 			{% for item in items %}
-				<button{{item.attributes.addClass('field__item')}}>{{ item.content }}</button>
+				<div{{item.attributes.addClass('field__item')}}>{{ item.content }}</div>
 			{% endfor %}
 			{% if multiple %}
-			</button>
+			</div>
 		{% endif %}
-	</button>
+	</div>
 {% endif %}

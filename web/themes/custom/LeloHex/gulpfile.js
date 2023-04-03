@@ -25,8 +25,8 @@ const compileSass = (src, dest) => () => {
 
 //Home page
 exports.compilePrimaryMenu = compileSass(
-  "scss/components/primary_menu.scss",
-  "primary_menu.css"
+  "scss/components/primaryMenu.scss",
+  "primaryMenu.css"
 );
 
 exports.compileContent = compileSass(

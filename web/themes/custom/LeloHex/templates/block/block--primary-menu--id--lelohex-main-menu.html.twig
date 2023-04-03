@@ -8,7 +8,8 @@
 
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
 <nav {{ attributes.addClass(classes).setAttribute('aria-labelledby', heading_id).setAttribute('role', 'navigation') }}>
-	{% block content %}
+	{{ attach_library('lelohex/primaryMenu') }}
+  {% block content %}
 		{{ content }}
 	{% endblock %}
 </nav>
