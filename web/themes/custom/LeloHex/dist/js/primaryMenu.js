@@ -9,30 +9,28 @@
   logIn.hide();
   languages.hide();
 
-  console.log(language);
-
   //prevent reloading on hitting inner span
-  languageOptions.on("click", (e) => {
+  languageOptions.click((e) => {
     e.preventDefault();
   });
 
   // Opening of submenu
-  language.on("click", (e) => {
+  language.click((e) => {
     languages.show();
     e.preventDefault();
   });
 
   Drupal.behaviors.lelohexHideMenu = {
-    attach: function (context) {
+    attach: (context) => {
       //close with outside and inner li click
-      $(document).mouseup(function (e) {
+      $(document).mouseup((e) => {
         if (!language.is(e.target)) {
           e.preventDefault();
           languages.hide();
         }
       });
       //close with escape
-      $(document).keyup(function (e) {
+      $(document).keyup((e) => {
         if (e.keyCode == 27) {
           languages.hide();
         }
