@@ -7,7 +7,7 @@
     touchContainer.get(0).scrollIntoView({ behavior: "smooth" });
   };
 
-  buttonTwo.on("click", (e) => {
+  buttonTwo.click((e) => {
     e.preventDefault();
     scrollToNL();
   });
