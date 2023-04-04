@@ -1,13 +1,6 @@
-{%
-  set classes = [
-  "header-nav",
-  'navigation',
 
-]
-%}
 
-{% set heading_id = attributes.id ~ '-menu'|clean_id %}
-<nav {{ attributes.addClass(classes).setAttribute('aria-labelledby', heading_id).setAttribute('role', 'navigation') }}>
+<nav {{ attributes.addClass("header-nav") }}>
 	{{ attach_library('lelohex/primaryMenu') }}
   {% block content %}
 		{{ content }}

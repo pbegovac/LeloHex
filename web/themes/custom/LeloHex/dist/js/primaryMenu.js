@@ -1,19 +1,42 @@
-((Drupal) => {
-  const unorderedListElements = document.querySelectorAll(
-    ".primary-nav__menu-item--level-1"
-  );
-  const submenu = document.querySelectorAll(".primary-nav__menu--level-2");
+((Drupal, $) => {
+  const navList = $(".primary-nav__menu-link-inner--level-1");
+  const submenu = $(".primary-nav__menu--level-2");
+  const logIn = submenu.eq(0);
+  const languages = submenu.eq(1);
+  const languageOptions = $(".primary-nav__menu-link-inner--level-2");
+  const language = navList.eq(1);
 
-  const language = unorderedListElements[1];
-  const languages = submenu[1];
-  console.log(languages);
+  logIn.hide();
+  languages.hide();
 
-  language.addEventListener("click", (e) => {
+  console.log(language);
+
+  //prevent reloading on hitting inner span
+  languageOptions.on("click", (e) => {
     e.preventDefault();
   });
 
-  //   //on language click - open submenu
-  //   //on anything that is not language - close submenu
-  //   // on escape - close submenu
-  //   // on link inside it - close submenu
-})(Drupal);
+  // Opening of submenu
+  language.on("click", (e) => {
+    languages.show();
+    e.preventDefault();
+  });
+
+  Drupal.behaviors.lelohexHideMenu = {
+    attach: function (context) {
+      //close with outside and inner li click
+      $(document).mouseup(function (e) {
+        if (!language.is(e.target)) {
+          e.preventDefault();
+          languages.hide();
+        }
+      });
+      //close with escape
+      $(document).keyup(function (e) {
+        if (e.keyCode == 27) {
+          languages.hide();
+        }
+      });
+    },
+  };
+})(Drupal, jQuery);

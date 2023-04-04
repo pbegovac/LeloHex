@@ -4,11 +4,20 @@
 .header-nav {
   width: 100%;
   background-color: $themeColor;
+
   ul {
     width: 100%;
     @include justifyAround;
+    // .primary-nav__menu-item--1 {
+    //   button {
+    //     display: none;
+    //   }
+    // }
     li {
+      position: relative;
+      list-style-type: none;
       a {
+        text-decoration: none;
         .primary-nav__menu-link-inner {
           @include text;
           font-size: 1.2rem;
@@ -18,20 +27,20 @@
         }
       }
       button {
-        span {
-          color: $submenu;
-          border: none;
-        }
+        display: none;
       }
       .primary-nav__menu-span {
         display: none;
       }
-      #primary-menu-item-1,
-      #primary-menu-item-12 {
+      .unorderedList {
+        margin: 0;
+        position: absolute;
         background-color: $submenu;
-        overflow: hidden;
-        border-top: none;
-        padding: 5px;
+        width: fit-content;
+        display: flex;
+        li {
+          padding: 5px;
+        }
       }
     }
   }

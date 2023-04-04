@@ -71,3 +71,4 @@ product-css:
   css:
     theme:
       dist/css/product.css: {}
+
